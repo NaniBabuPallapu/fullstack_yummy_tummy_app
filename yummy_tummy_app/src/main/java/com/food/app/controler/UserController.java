@@ -16,8 +16,9 @@ public class UserController {
     UserService userService;
 
     @GetMapping("/users")
-    public List<User> displayAllUsers() {
-        return userService.displayUsers();
+    public HttpStatus displayAllUsers() {
+        List<User> users =  userService.displayUsers();
+       return HttpStatus.OK;
     }
 
     @PostMapping("/save-users")
