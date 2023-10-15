@@ -1,5 +1,7 @@
+
 nav{
     height: 100%;
+    color: #EFEFEF;
 }
 .side-nav-button{
  display: flex;
@@ -9,6 +11,48 @@ nav{
  cursor: pointer;
 }
 .side-nav-button:hover{
-    background-color: rgb(226, 255, 255,0.2);
+    color: #1e3659;
+    background-color: #EFEFEF;
     border-radius: 30%;
+}
+.side-nav-button i:hover{
+    color: #1e3659;
+}
+
+.custom-bg-color {
+    // background-color: #ff5733; /* Custom header background color (e.g., orange) */
+    background-color: #FE6F2F; /* Footer background color (dark gray) */ //FE6F2F
+    color: #EFEFEF;
+}
+
+/* CSS to reduce the image size and control its appearance within the header */
+img{
+    width: 300px;
+    cursor: pointer;
+    margin: 7px 0;
+    padding-bottom: 70px;
+    padding-top: 70px;
+
+}
+nav-link{
+    color: #EFEFEF;
+}
+
+.custom-dropdown-menu{
+    background-color: #FE6F2F; /* Footer background color (dark gray) */ //FE6F2F
+
+}
+.dropdown-item{
+    color: #EFEFEF;
+
+}
+
+.dropdown-item:hover{
+    // background-color: rgba(255, 255, 255, 0.3);
+    background-color: #EFEFEF;
+    color: #1e3659;
+
+}
+.fa-user{
+    font-size: 1.5rem;
 }
