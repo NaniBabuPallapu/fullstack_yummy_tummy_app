@@ -21,8 +21,8 @@
 }
 
 .nav-list-open .nav-list-item:hover {
-    // background-color: rgba(255, 255, 255, 0.3);
-    background-color: #EFEFEF;
+    background-color: rgba(255, 255, 255, 0.3);
+    // background-color: #EFEFEF;
     color: #1e3659;
     border-radius: 10px;
 
@@ -46,7 +46,8 @@
 
 .nav-list-item:hover {
     color: #1e3659;
-    background-color: #EFEFEF;
+    background-color: rgba(255, 255, 255, 0.3);
+    // background-color: #EFEFEF;
     border-radius: 20px;
 
 }
@@ -60,10 +61,14 @@
 a {
     text-decoration: none;
     color: #EFEFEF;
+    font-weight: bolder;
 }
 
-a:hover {
+.nav-list-item span a:hover {
     color: #1e3659;
-    background-color: #EFEFEF;
     font-weight: bolder;
+}
+
+.icon.active{
+    color: #1e3659;
 }

@@ -12,6 +12,14 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { MainComponent } from './layouts/main/main.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { CaptilizePipe } from './custom_pipes/captilize.pipe';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { OrdersComponent } from './components/order/orders/orders.component';
+import { SettingsComponent } from './components/settings/settings.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { CreateOrderComponent } from './components/order/create-order/create-order.component';
+import { DeleteOrderComponent } from './components/order/delete-order/delete-order.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,6 +31,14 @@ import { CaptilizePipe } from './custom_pipes/captilize.pipe';
     FooterComponent,
     HeaderComponent,
     CaptilizePipe,
+    DashboardComponent,
+    MenuComponent,
+    OrdersComponent,
+    SettingsComponent,
+    AboutComponent,
+    ContactUsComponent,
+    CreateOrderComponent,
+    DeleteOrderComponent,
   ],
   imports: [
     BrowserModule,
