@@ -11,6 +11,7 @@ main {
     width: 100%;
     top: 4rem;
     z-index: 1;
+
 }
 
 .black-border {
@@ -23,15 +24,17 @@ app-navbar-side {
     width: 60px;
     height: calc(100vh - 4rem);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    background-color: rgba(34, 34, 34, 1);
-    border-top: 1px solid white;
+    background-color: #FE6F2F;
+    /* Footer background color (dark gray) */
+    //FE6F2F
+    border-top: 1px solid #EFEFEF;
     overflow-x: hidden;
     white-space: nowrap;
     transition: width 250ms ease-in;
 
 }
 
-.app-side-nav-open{
+.app-side-nav-open {
     width: 250px;
 }
 
