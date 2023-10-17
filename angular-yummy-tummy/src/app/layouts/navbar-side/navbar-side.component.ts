@@ -9,6 +9,7 @@ export class NavbarSideComponent {
 
   @Input() sideNavStatus: boolean = false;
 
+  // displaying while hover the text 
   dashboard : string = 'dashboard';
   menu : string = 'menu';
   orders : string = 'orders';
