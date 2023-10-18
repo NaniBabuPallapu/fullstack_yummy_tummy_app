@@ -6,6 +6,7 @@ import { OrdersComponent } from './components/order/orders/orders.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { DisplayProfileComponent } from './components/users/display-profile/display-profile.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path : 'contactUs', component : ContactUsComponent
+  },
+  {
+    path : 'users',component : DisplayProfileComponent
   },
   {
      path: '', redirectTo: 'dashboard', pathMatch: 'full' 

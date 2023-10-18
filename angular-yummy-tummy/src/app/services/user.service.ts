@@ -18,8 +18,24 @@ export class UserService {
 
   }
 
-
   getAllUsers():Observable<User[]>{
-   return this.httpClient.get<User[]>(this.baseUrl+'/'+'users');
+    return this.httpClient.get<User[]>(this.baseUrl+"/"+"users");
   }
+
+  getUserById(id : number):Observable<User>{
+    return this.httpClient.get<User>(`${this.baseUrl}/get-user/${id}`);
+  }
+
+  createUser(user : User):Observable<User>{
+    return this.httpClient.post<User>(this.baseUrl, user);
+  }
+
+  updateUserById( id : number, user : User):Observable<User>{
+    return this.httpClient.put<User>(`${this.baseUrl}/update-user/${id}`,user);
+  }
+
+  deleteUserById(id:number):Observable<void>{
+    return this.httpClient.delete<void>(`${this.baseUrl}delete-user/${id}`);
+  }
+
 }
