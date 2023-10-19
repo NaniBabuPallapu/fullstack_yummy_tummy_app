@@ -23,7 +23,7 @@ export class UserService {
   }
 
   getUserById(id : number):Observable<User>{
-    return this.httpClient.get<User>(`${this.baseUrl}/get-user/${id}`);
+    return this.httpClient.get<User>(`${this.baseUrl}/display-user/${id}`);
   }
 
   createUser(user : User):Observable<User>{

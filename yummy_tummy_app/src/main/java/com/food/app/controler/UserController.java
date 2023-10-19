@@ -32,7 +32,7 @@ public class UserController {
         return HttpStatus.CREATED;
     }
 
-    @GetMapping("/get-user/{id}")
+    @GetMapping("/display-user/{id}")
     public User displayUserById(@PathVariable Integer id) {
         return userService.findById(id);
 
