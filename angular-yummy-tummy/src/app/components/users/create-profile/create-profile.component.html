@@ -1,0 +1,52 @@
+<div class="create-profile">
+    <h4><i class="fa-solid fa-user"></i>Create Profile</h4>
+    <!-- novalidate : novalidate is applied to the <form> element. It disables the browser's default form validation and 
+                    relies on Angular's reactive form validation defined in the userFormData FormGroup -->
+    <form [formGroup]="userFormData" (ngSubmit)="userFormSubmit(userFormData.value)" class="form-css" novalidate>
+        <div class="form-group">
+            <label for="first-name" class="check-css">First Name :</label>
+            <input type="text" id="first-name" class="form-control" placeholder="enter first name"
+                formControlName="firstName_">
+        </div>
+
+        <div class="form-group">
+            <label for="last-name" class="check-css">Last Name :</label>
+            <input type="text" id="last-name" class="form-control" placeholder="enter last name"
+                formControlName="lastName_">
+        </div>
+
+        <div class="form-group">
+            <label for="login-name" class="check-css">Login Name :</label>
+            <input type="text" id="login-name" class="form-control" placeholder="enter login name"
+                formControlName="logInName_">
+        </div>
+
+        <div class="form-group">
+            <label for="password" class="check-css">Password :</label>
+            <input type="password" id="password" class="form-control" placeholder="enter password"
+                formControlName="password_">
+                <div *ngIf="!passwordValue?.valid  && (passwordValue?.dirty && passwordValue?.touched)">
+                    <small [hidden]="!passwordValue?.errors?.['required']">password is required</small>
+                    <small [hidden]="!passwordValue?.errors?.['PasswrodValidator']">password should be between 4 and 12</small>
+                </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="check-css">Email :</label>
+            <input type="email" id="email" class="form-control" placeholder="enter email" formControlName="email_">
+        </div>
+
+        <div class="form-group">
+            <label for="phone" class="check-css">Phone :</label>
+            <input type="phone" id="phone" class="form-control" placeholder="enter phone number"
+                formControlName="phone_">
+                <div class="validation-message" *ngIf="!phoneValue?.valid && (phoneValue?.dirty && phoneValue?.touched)">
+                    <small class="error-message" [hidden]="!phoneValue?.errors?.['required']">* Phone number is required</small>
+                    <small class="error-message" [hidden]="!phoneValue?.errors?.['PhoneNumberValidator']">* Phone number must have 10 numbers</small>
+                </div>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" [disabled]="!userFormData.valid">Submit</button>
+        </div>
+    </form>
+</div>

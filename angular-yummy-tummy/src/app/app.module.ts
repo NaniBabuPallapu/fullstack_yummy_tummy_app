@@ -3,9 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserCreateComponent } from './components/users/user-create/user-create.component';
-import { UserListComponent } from './components/users/user-list/user-list.component';
-import { UserDetailsComponent } from './components/users/user-details/user-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavbarSideComponent } from './layouts/navbar-side/navbar-side.component';
 import { FooterComponent } from './layouts/footer/footer.component';
@@ -20,12 +17,14 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { CreateOrderComponent } from './components/order/create-order/create-order.component';
 import { DeleteOrderComponent } from './components/order/delete-order/delete-order.component';
+import { CreateProfileComponent } from './components/users/create-profile/create-profile.component';
+import { DisplayProfileComponent } from './components/users/display-profile/display-profile.component';
+import { DeleteProfileComponent } from './components/users/delete-profile/delete-profile.component';
+import { UpdateProfileComponent } from './components/users/update-profile/update-profile.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
-    UserCreateComponent,
-    UserListComponent,
-    UserDetailsComponent,
     MainComponent,
     NavbarSideComponent,
     FooterComponent,
@@ -39,12 +38,17 @@ import { DeleteOrderComponent } from './components/order/delete-order/delete-ord
     ContactUsComponent,
     CreateOrderComponent,
     DeleteOrderComponent,
+    CreateProfileComponent,
+    DisplayProfileComponent,
+    DeleteProfileComponent,
+    UpdateProfileComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    
+    ReactiveFormsModule,
+    FormsModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
