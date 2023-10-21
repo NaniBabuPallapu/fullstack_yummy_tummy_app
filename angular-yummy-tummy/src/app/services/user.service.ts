@@ -27,7 +27,7 @@ export class UserService {
   }
 
   createUser(user : User):Observable<User>{
-    return this.httpClient.post<User>(this.baseUrl, user);
+    return this.httpClient.post<User>(this.baseUrl+"/create-user", user);
   }
 
   updateUserById( id : number, user : User):Observable<User>{
