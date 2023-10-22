@@ -28,7 +28,7 @@
             <div class="validation-message" *ngIf="!passwordValue?.valid  && (passwordValue?.dirty && passwordValue?.touched)">
                 <small class="error-message" [hidden]="!passwordValue?.errors?.['required']">* password is required</small>
                 <small class="error-message" [hidden]="!passwordValue?.errors?.['PasswrodValidator']">* password should be between 4 and
-                    12</small>
+                    15 characters</small>
             </div>
         </div>
 
