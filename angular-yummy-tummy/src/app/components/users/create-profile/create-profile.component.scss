@@ -62,12 +62,16 @@
 
 }
 
-
-.validation-message {
-    flex: 4;
-    margin-left: 10px;
-}
-
 .error-message {
     color: #EFEFEF;
+    display: inline-flex;
+    text-align: left;
+    margin-left: 140px; /* Adjust this margin to control the distance from the input field */
+    flex: 1;
+    width: auto; /* Allow the error message to adjust its width based on content */
+    white-space: nowrap; /* Prevent the error message from wrapping to the next line */
+    overflow: hidden; /* Hide any overflow content */
+    text-overflow: ellipsis; /* Add an ellipsis (...) for overflow */
+    // padding: 5px;
+    // margin-bottom: 3px;
 }
