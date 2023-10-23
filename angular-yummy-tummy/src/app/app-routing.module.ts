@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { DisplayProfileComponent } from './components/users/display-profile/display-profile.component';
 import { CreateProfileComponent } from './components/users/create-profile/create-profile.component';
+import { UpdateProfileComponent } from './components/users/update-profile/update-profile.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,9 @@ const routes: Routes = [
   },
   {
     path : 'create-user', component : CreateProfileComponent
+  },
+  {
+    path : 'update-user/:id', component : UpdateProfileComponent
   },
   {
      path: '', redirectTo: 'dashboard', pathMatch: 'full' 
