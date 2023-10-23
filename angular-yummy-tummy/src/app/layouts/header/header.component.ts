@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { User } from 'src/app/interfaces/user';
 
 @Component({
   selector: 'app-header',
@@ -11,9 +12,12 @@ export class HeaderComponent {
 
  menuStatus: boolean = false;
 
+fetchedUserId: number | undefined;
 
 
-
+ngOnInit(){
+  this.fetchedUserId = this.fetchedUserId;
+}
 
 
 

@@ -2,6 +2,8 @@ package com.food.app.service;
 
 import com.food.app.domain.User;
 import com.food.app.repository.UserRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +12,8 @@ import java.util.List;
 
 @Service
 public class UserService {
+
+    private static final Logger log = LoggerFactory.getLogger(UserService.class);
 
     @Autowired
     UserRepository userRepository;
@@ -37,10 +41,15 @@ public class UserService {
 
         // Update the fields of the existing employee
         existingUser.setFirstName(user.getFirstName());
+        existingUser.setLastName(user.getLastName());
+        existingUser.setLoginName(user.getLoginName());
+        existingUser.setPassword(user.getPassword());
         existingUser.setEmail(user.getEmail());
         existingUser.setPhone(user.getPhone());
 
         userRepository.save(existingUser);
+        log.info("User has been updated successfully. id: {} ",user.getId());
+
     }
 
     public void deleteByUserId(Integer id){

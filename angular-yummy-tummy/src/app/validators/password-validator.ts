@@ -5,7 +5,7 @@ export function PasswrodValidator(control: AbstractControl) {
         return null
     }
     if (control.value.length >= 4 && control.value.length <= 15) {
-        return null; // Don't show the error until at least 10 characters are entered
+        return null; // Don't show the error until at least 15 characters are entered
     }
     return {
         PasswrodValidator: true

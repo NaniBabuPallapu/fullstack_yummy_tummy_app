@@ -14,7 +14,6 @@ import { PhoneNumberValidator } from 'src/app/validators/phone-number-validator'
 })
 export class CreateProfileComponent implements OnInit {
 
-  user!: User;
   userFormData!: FormGroup;
 
   addUserProfile: User = {} as User;
