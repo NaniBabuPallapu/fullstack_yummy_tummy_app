@@ -9,6 +9,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { DisplayProfileComponent } from './components/users/display-profile/display-profile.component';
 import { CreateProfileComponent } from './components/users/create-profile/create-profile.component';
 import { UpdateProfileComponent } from './components/users/update-profile/update-profile.component';
+import { DeleteProfileComponent } from './components/users/delete-profile/delete-profile.component';
 
 const routes: Routes = [
   {
@@ -37,6 +38,9 @@ const routes: Routes = [
   },
   {
     path : 'update-user/:id', component : UpdateProfileComponent
+  },
+  {
+    path : 'delete-user/:id', component : DeleteProfileComponent
   },
   {
      path: '', redirectTo: 'dashboard', pathMatch: 'full' 
