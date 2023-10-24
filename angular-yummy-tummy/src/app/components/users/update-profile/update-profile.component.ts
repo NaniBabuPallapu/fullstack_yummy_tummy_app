@@ -14,7 +14,7 @@ import { PhoneNumberValidator } from 'src/app/validators/phone-number-validator'
 })
 export class UpdateProfileComponent implements OnInit {
 
-  fetchedUser: User = {} as User;
+  fetchedUser!: User | null;
   userFormData!: FormGroup;
 
   updatedUserSave: User = {} as User;
@@ -24,6 +24,7 @@ export class UpdateProfileComponent implements OnInit {
   // userFormData: FormGroup = {} as FormGroup; // definedObject instead of undefined  userFormData!: FormGroup;
 
   constructor(private debugService: DebugService, private router: Router, private userService: UserService, private activatedRoute: ActivatedRoute) {
+    this.fetchedUser  = this.userService.getUser();
 
   }
 
@@ -39,9 +40,12 @@ export class UpdateProfileComponent implements OnInit {
       phone_: new FormControl('', [Validators.required, PhoneNumberValidator])  // customValidation for Phone number
     });
 
-    const idFromRoute = this.activatedRoute.snapshot.paramMap.get('id');
-    const defaultId = 1;
-    const selectedId = (idFromRoute !== null && !isNaN(Number(idFromRoute))) ? Number(idFromRoute) : defaultId;
+    // const idFromRoute = this.activatedRoute.snapshot.paramMap.get('id');
+    // const defaultId = 1;
+    // const selectedId = (idFromRoute !== null && !isNaN(Number(idFromRoute))) ? Number(idFromRoute) : defaultId;
+
+    // this.fetchedUser  = this.userService.getUser();
+    const selectedId = Number(this.fetchedUser?.id);
     if (selectedId !== null || selectedId !== 0) {
 
       this.userService.getUserById(selectedId).subscribe((data) => {

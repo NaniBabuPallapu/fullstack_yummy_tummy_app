@@ -1,0 +1,95 @@
+.create-profile {
+    background-color: #FE6F2F;
+    color: #EFEFEF;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    font-weight: bold;
+}
+
+.create-profile .fa-user {
+    margin-right: 20px;
+}
+
+.form-group {
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    /* Add padding to form-group */
+    width: 400px;
+    /* Adjust the width to your preference */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control {
+    width: 250px;
+    /* Adjust the width to your preference */
+    padding: 10px;
+    margin-left: 10px;
+    /* Add space between label and input */
+}
+
+.form-group .check-css label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+    /* Add space between label and input */
+}
+
+.form-group .check-css input {
+    flex: 2;
+    margin-left: 10px;
+}
+
+.create-profile .form-group .btn-primary {
+
+    width: 100%;
+    /* Make the button as wide as the form-group */
+    background-color: #EFEFEF;
+    color: #1e3659;
+    font-weight: bold;
+    border: 1px solid lightblue;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.error-message {
+    color: #EFEFEF;
+    display: inline-flex;
+    text-align: left;
+    margin-left: 140px; /* Adjust this margin to control the distance from the input field */
+    flex: 1;
+    width: auto; /* Allow the error message to adjust its width based on content */
+    white-space: nowrap; /* Prevent the error message from wrapping to the next line */
+    overflow: hidden; /* Hide any overflow content */
+    text-overflow: ellipsis; /* Add an ellipsis (...) for overflow */
+    // padding: 5px;
+    // margin-bottom: 3px;
+}
+
+.signup-checkout {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center vertically */
+}
+
+.spacer {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+a{
+    text-decoration: none;
+    color: inherit; /* Inherit the color from the parent element */
+}
+a:hover{
+    color: #1e3659; /* Inherit the color from the parent element */
+
+}

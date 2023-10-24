@@ -63,7 +63,7 @@ export class CreateProfileComponent implements OnInit {
     if (this.addUserProfile != null) {
       this.userService.createUser(this.addUserProfile).subscribe((data) => {
         console.log("fetched single user based on Id : " + JSON.stringify(this.addUserProfile));
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/login']);
       });
     }
 

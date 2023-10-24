@@ -12,16 +12,20 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class DeleteProfileComponent implements OnInit {
 
-  fetchedUser: User = {} as User;
+  fetchedUser!: User | null ;
 
   constructor(private debugService: DebugService, private router: Router, private userService: UserService, private activatedRoute: ActivatedRoute) {
+    this.fetchedUser  = this.userService.getUser();
 
   }
   ngOnInit() {
 
-    const idFromRoute = this.activatedRoute.snapshot.paramMap.get('id');
-    const defaultId = 8;
-    const fetchedUserId = (idFromRoute !== null && !isNaN(Number(idFromRoute))) ? Number(idFromRoute) : defaultId;
+    // const idFromRoute = this.activatedRoute.snapshot.paramMap.get('id');
+    // const defaultId = 8;
+    // const fetchedUserId = (idFromRoute !== null && !isNaN(Number(idFromRoute))) ? Number(idFromRoute) : defaultId;
+
+      // this.fetchedUser  = this.userService.getUser();
+      const fetchedUserId = Number(this.fetchedUser?.id);
 
     if (fetchedUserId !== null && fetchedUserId !== 0) {
 
@@ -39,20 +43,15 @@ export class DeleteProfileComponent implements OnInit {
         this.fetchedUser = data;
 
         //deleting user profile
-        if (confirm("Are you sure to delete this profile : " + this.fetchedUser.firstName + " " + this.fetchedUser.lastName)) {
-          this.userService.deleteUserById(defaultId).subscribe((data) => {
+        if (confirm("Are you sure to delete this profile : " + this.fetchedUser?.firstName + " " + this.fetchedUser?.lastName)) {
+          this.userService.deleteUserById(fetchedUserId).subscribe((data) => {
 
-            console.log("Fetched User Deleted : "+this.fetchedUser.id+": "+ this.fetchedUser.firstName + " " + this.fetchedUser.lastName);
+            console.log("Fetched User Deleted : "+fetchedUserId+": "+ this.fetchedUser?.firstName + " " + this.fetchedUser?.lastName);
             console.log("User Deleted : "+data);
           });
         }
-
-        this.router.navigate(['/dashboard']);
       });
-
-
-
-
+      this.router.navigate(['/dashboard']);
 
     }
 

@@ -12,12 +12,22 @@ import { Router } from '@angular/router';
 export class UserService {
   private baseUrl = API_BASE_URL;
 
+  private user: User | null = null;
 
 
 
   constructor(private httpClient: HttpClient, private router: Router) {
 
   }
+
+  setUser(user: User | null): void {
+    this.user = user;
+  }
+
+  getUser(): User | null {
+    return this.user;
+  }
+
 
   getAllUsers(): Observable<User[]> {
     return this.httpClient.get<User[]>(this.baseUrl + "/" + "users");
@@ -35,7 +45,7 @@ export class UserService {
     return this.httpClient.put<User>(`${this.baseUrl}/update-user/${id}`, user);
   }
 
-  deleteUserById( id: number): Observable<void> {
+  deleteUserById(id: number): Observable<void> {
     return this.httpClient.delete<void>(`${this.baseUrl}/delete-user/${id}`);
   }
 
