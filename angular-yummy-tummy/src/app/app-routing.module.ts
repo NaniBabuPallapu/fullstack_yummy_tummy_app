@@ -10,43 +10,40 @@ import { DisplayProfileComponent } from './components/users/display-profile/disp
 import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './guards/auth.guard';
 import { UserRoutingModule } from './components/users/user-routing.module';
-import { UserResolver } from './resolvers/user.resolver';
-
 const routes: Routes = [
   {
-    path: 'dashboard', 
+    path: 'dashboard',
     component: DashboardComponent,
-    canActivate : [AuthGuard]
+    canActivate: [AuthGuard]
   },
   {
-    path: 'menu', 
+    path: 'menu',
     component: MenuComponent
   },
   {
-    path: 'orders', 
+    path: 'orders',
     component: OrdersComponent
   },
   {
-    path: 'settings', 
+    path: 'settings',
     component: SettingsComponent
   },
   {
-    path: 'about', 
+    path: 'about',
     component: AboutComponent
   },
   {
-    path: 'contactUs', 
+    path: 'contactUs',
     component: ContactUsComponent
   },
   {
-    path: 'login', 
-    component: LoginComponent
+    path: 'login',
+    component: LoginComponent,
   },
   {
     path: 'user',
     component: DisplayProfileComponent,
     children: UserRoutingModule.routes,
-    // canActivate : [AuthGuard]
   },
   {
     path: '', redirectTo: 'login', pathMatch: 'full'

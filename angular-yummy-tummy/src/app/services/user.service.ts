@@ -21,10 +21,16 @@ export class UserService {
   }
 
   setUser(user: User | null): void {
+    // const tempuser =  localStorage.getItem('currentUserData');
+    // user = tempuser ? JSON.parse(tempuser) : null;
+
     this.user = user;
   }
 
   getUser(): User | null {
+    const tempuser =  localStorage.getItem('currentUserData');
+    this.user = tempuser ? JSON.parse(tempuser) : null;
+     
     return this.user;
   }
 

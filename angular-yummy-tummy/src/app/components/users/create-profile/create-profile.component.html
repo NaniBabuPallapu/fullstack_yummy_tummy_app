@@ -1,4 +1,4 @@
-<div class="create-profile">
+<div class="create-profile" *ngIf="signUp">
     <h4><i class="fa-solid fa-user"></i>Create Profile</h4>
     <!-- novalidate : novalidate is applied to the <form> element. It disables the browser's default form validation and 
                     relies on Angular's reactive form validation defined in the userFormData FormGroup -->
@@ -50,6 +50,9 @@
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary" [disabled]="!userFormData.valid">Submit</button>
+        </div>
+        <div class="form-group">
+            <button type="button" class="btn btn-primary" (click)="backToSignIn()" [disabled]="userFormData.valid"> Back To LogIn</button>
         </div>
     </form>
 </div>

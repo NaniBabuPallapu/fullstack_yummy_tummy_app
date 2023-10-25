@@ -34,7 +34,6 @@ ngOnInit(){
 
 
  logOut(){
-  this.router.navigate(['/login']);
 
   this.authService.logOut();
 

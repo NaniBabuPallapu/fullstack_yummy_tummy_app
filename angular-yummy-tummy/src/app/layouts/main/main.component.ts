@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class MainComponent {
   sideNavStatus : boolean = false;
   
+
 
 }

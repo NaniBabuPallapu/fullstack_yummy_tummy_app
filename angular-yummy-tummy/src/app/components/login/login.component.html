@@ -1,13 +1,17 @@
-<div class="create-profile">
+<div class="create-profile" *ngIf="signIn || signInUserBack; else userSignUp">
+    <div class="create-profile">
     <h4><i class="fa-solid fa-user"></i>Sign In</h4>
     <!-- novalidate : novalidate is applied to the <form> element. It disables the browser's default form validation and 
                     relies on Angular's reactive form validation defined in the logInForm FormGroup -->
     <form [formGroup]="logInForm" (ngSubmit)="logIn(logInForm.value)" class="form-css" novalidate>
         <div class="form-group">
             <label for="login-name" class="check-css">Login Name :</label>
-            <input type="text" id="login-name" class="form-control" placeholder="enter login name" formControlName="logInName_">
-            <div class="validation-message" *ngIf="!logInNameValue?.valid  && (logInNameValue?.dirty && logInNameValue?.touched)">
-                <small class="error-message" [hidden]="!logInNameValue?.errors?.['required']">* login name is required</small>
+            <input type="text" id="login-name" class="form-control" placeholder="enter login name"
+                formControlName="logInName_">
+            <div class="validation-message"
+                *ngIf="!logInNameValue?.valid  && (logInNameValue?.dirty && logInNameValue?.touched)">
+                <small class="error-message" [hidden]="!logInNameValue?.errors?.['required']">* login name is
+                    required</small>
             </div>
         </div>
 
@@ -17,15 +21,17 @@
                 formControlName="password_">
             <div class="validation-message"
                 *ngIf="!passwordValue?.valid  && (passwordValue?.dirty && passwordValue?.touched)">
-                <small class="error-message" [hidden]="!passwordValue?.errors?.['required']">* password is required</small>
-                <small class="error-message" [hidden]="!passwordValue?.errors?.['PasswrodValidator']">* password should be between 4 and 15 characters</small>
+                <small class="error-message" [hidden]="!passwordValue?.errors?.['required']">* password is
+                    required</small>
+                <small class="error-message" [hidden]="!passwordValue?.errors?.['PasswrodValidator']">* password should
+                    be between 4 and 15 characters</small>
             </div>
         </div>
 
         <div class="signup-checkout">
-            <a class="forgot-password" routerLink="/forgot-password">Forgot Password</a>
+            <button class="forgot-password" routerLink="/forgot-password">Forgot Password</button>
             <span class="spacer"></span> <!-- Add a separator (e.g., pipe) with some spacing -->
-            <a class="signup-account" routerLink="/create-user">Sign Up</a>
+            <button class="signup-account" type="button" (click)="createProfile()" [disabled]="buttonDisabled">Sign Up</button>
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary" [disabled]="!logInForm.valid">Login</button>
@@ -35,3 +41,8 @@
         </div>
     </form>
 </div>
+</div>
+
+<ng-template #userSignUp>
+    <app-create-profile (singInBack)="signInUserBack=$event" [createProfile]="signUp"></app-create-profile>
+</ng-template>

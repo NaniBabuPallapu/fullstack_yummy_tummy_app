@@ -12,7 +12,6 @@ export class AuthService {
   private isAuthenticated = false;
 
 
-
   fetchedUsersList: User[] = [];
 
   constructor(private userService: UserService, private router: Router) {
@@ -31,23 +30,25 @@ export class AuthService {
 
         if (this.fetchedUsersList !== null && this.fetchedUsersList.length > 0) {
           const foundUser = this.fetchedUsersList.find((user) => user.loginName === logInName && user.password === password);
-          
+
           if (foundUser) {
+            localStorage.setItem('currentUserData', JSON.stringify(foundUser));
+            // const currentUserData = localStorage.getItem('currentUserData');
+            // const foundUserData: User | null = currentUserData ? JSON.parse(currentUserData) : null;            
+
             console.log('User found and logged in successfully: ' + foundUser.id);
             this.isAuthenticated = true;
-            this.userService.setUser(foundUser);
 
           } else {
             console.log("User credentials do not match or unable to find user");
             this.isAuthenticated = false;
-            this.userService.setUser(null);
 
           }
         } else {
           console.log("No users found.");
           this.isAuthenticated = false;
         }
-        localStorage.setItem('isAuthenticated', this.isAuthenticated ? "true" :"false");
+        localStorage.setItem('isAuthenticated', this.isAuthenticated ? "true" : "false");
         return this.isAuthenticated;
 
       })
@@ -56,10 +57,11 @@ export class AuthService {
 
 
   logOut() {
-    this.isAuthenticated = false;
-  }
+    localStorage.removeItem('currentUserData')
+    // localStorage.removeItem('isAuthenticated');
+    // After logout
+    localStorage.setItem('isAuthenticated', 'false');
 
-  authenticatedUser(){
-    return this.isAuthenticated;
+    this.router.navigate(['/login']);
   }
 }

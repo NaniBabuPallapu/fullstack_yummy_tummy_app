@@ -66,30 +66,43 @@
     color: #EFEFEF;
     display: inline-flex;
     text-align: left;
-    margin-left: 140px; /* Adjust this margin to control the distance from the input field */
+    margin-left: 140px;
+    /* Adjust this margin to control the distance from the input field */
     flex: 1;
-    width: auto; /* Allow the error message to adjust its width based on content */
-    white-space: nowrap; /* Prevent the error message from wrapping to the next line */
-    overflow: hidden; /* Hide any overflow content */
-    text-overflow: ellipsis; /* Add an ellipsis (...) for overflow */
+    width: auto;
+    /* Allow the error message to adjust its width based on content */
+    white-space: nowrap;
+    /* Prevent the error message from wrapping to the next line */
+    overflow: hidden;
+    /* Hide any overflow content */
+    text-overflow: ellipsis;
+    /* Add an ellipsis (...) for overflow */
     // padding: 5px;
     // margin-bottom: 3px;
 }
 
 .signup-checkout {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center vertically */
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center vertically */
 }
 
 .spacer {
     margin-left: 25%;
     margin-right: 25%;
 }
-a{
-    text-decoration: none;
-    color: inherit; /* Inherit the color from the parent element */
-}
-a:hover{
-    color: #1e3659; /* Inherit the color from the parent element */
 
+button {
+    border: none;
+    color: inherit;
+    background-color: #FE6F2F;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
+
+button:hover {
+    color: #1e3659;
+    /* Inherit the color from the parent element */
+}
+

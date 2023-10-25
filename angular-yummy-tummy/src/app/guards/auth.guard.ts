@@ -26,7 +26,7 @@ export class AuthGuard implements CanActivate {
 
       let storedValue = localStorage.getItem('isAuthenticated');
 
-      if (storedValue !== null && storedValue === "true" && this.authService.authenticatedUser()) {
+      if (storedValue !== null && storedValue === "true") {
         if (currentUrl === '/login') {
           this.router.navigate(['/dashboard']);
           return true; // Return true if the user is logged in and navigates to '/login'.
@@ -49,7 +49,7 @@ export class AuthGuard implements CanActivate {
 
 
 
-  
+
   // canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
   //   let storedValue = localStorage.getItem('isAuthenticated');
 
