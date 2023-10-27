@@ -25,7 +25,6 @@ export class AuthGuard implements CanActivate {
       console.log("current Url Path : " + currentUrl);
 
       let storedValue = localStorage.getItem('isAuthenticated');
-
       if (storedValue !== null && storedValue === "true") {
         if (currentUrl === '/login') {
           this.router.navigate(['/dashboard']);
