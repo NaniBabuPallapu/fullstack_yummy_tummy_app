@@ -29,7 +29,7 @@
         </div>
 
         <div class="forgot-checkout">
-            <button class="forgot-password" routerLink="/forgot-password">Forgot Password?</button>
+            <!-- <button class="forgot-password" routerLink="/forgot-password">Forgot Password?</button> -->
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-primary" [disabled]="!logInForm.valid">Login</button>
@@ -43,6 +43,8 @@
     </form>
 </div>
 </div>
+<!-- (singInBack) event emitter is an @Output decorator from create-profile.ts file and assign this value to signInUserBack property in login.ts file-->
+<!-- signUp is a property and assign this value to [createProfile] @Input decorator login.ts file -->
 
 <ng-template #userSignUp>
     <app-create-profile (singInBack)="signInUserBack=$event" [createProfile]="signUp"></app-create-profile>

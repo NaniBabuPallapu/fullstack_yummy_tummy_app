@@ -46,7 +46,7 @@ const routes: Routes = [
     children: UserRoutingModule.routes,
   },
   {
-    path: '', redirectTo: 'login', pathMatch: 'full'
+    path: '', redirectTo: 'dashboard', pathMatch: 'full'
   }
 ];
 

@@ -62,9 +62,11 @@ export class LoginComponent implements OnInit {
         console.log("User has been logged In : " + data)
         this.router.navigate(['/dashboard']);
       } else {
+        console.log('log in failed, please try again');
         this.logInFailed = true;
         this.passwordValue?.clearValidators;
         this.passwordValue?.updateValueAndValidity;
+        location.reload();
       }
     })
 

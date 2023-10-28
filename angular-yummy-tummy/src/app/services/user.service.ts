@@ -29,8 +29,8 @@ export class UserService {
 
   getUser(): User | null {
     const tempuser =  localStorage.getItem('currentUserData');
-    this.user = tempuser ? JSON.parse(tempuser) : null;
-     
+    this.user = tempuser ? JSON.parse(tempuser) : null; // parsing from JSON string to a 'User' object
+  
     return this.user;
   }
 

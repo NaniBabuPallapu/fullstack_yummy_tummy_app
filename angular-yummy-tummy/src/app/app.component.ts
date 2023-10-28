@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -9,16 +10,16 @@ export class AppComponent implements OnInit{
   
   isAuthenticated : boolean = false;
 
+  constructor(private authService : AuthService){
+
+  }
 
   ngOnInit(){
-    let storeAuth = localStorage.getItem('isAuthenticated');
-    console.log("User Authentication : "+storeAuth);
-
-    if(storeAuth !== null && storeAuth === "true"){
-      this.isAuthenticated = true;
-    } else{
-      this.isAuthenticated = false;
-    }
+    // setting user value true or false if user is logged in or logged out simultaneously 
+    this.authService.currentUser$.subscribe((user) => {
+      console.log("checking user's loggedIn or logging out : "+user+" check "+!!user);
+      this.isAuthenticated = !!user;
+  });
   }
 
 }

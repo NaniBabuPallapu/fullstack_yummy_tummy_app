@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { UserService } from './user.service';
 import { User } from '../interfaces/user';
-import { Observable, catchError, map, throwError } from 'rxjs';
+import { BehaviorSubject, Observable, catchError, map, throwError } from 'rxjs';
 import { Router } from '@angular/router';
 
 @Injectable({
@@ -10,12 +10,21 @@ import { Router } from '@angular/router';
 export class AuthService {
 
   private isAuthenticated = false;
+  private currentUserSubject: BehaviorSubject<User | null>;
+  public currentUser$: Observable<User | null>;
 
 
   fetchedUsersList: User[] = [];
 
   constructor(private userService: UserService, private router: Router) {
+    let storageUser: User | null = null;
+    const storageUserAsStr = localStorage.getItem('currentUserData'); // fetching current user details from localStorage.
+    if (storageUserAsStr) {
+      storageUser = JSON.parse(storageUserAsStr); // parsing from JSON string to a 'User' object
 
+    }
+    this.currentUserSubject = new BehaviorSubject<User | null>(storageUser); // This ensures that the currentUserSubject initially holds the user's data if available or null if not.
+    this.currentUser$ = this.currentUserSubject.asObservable(); //As a result, the currentUser$ observable emits the new user value, and any components that are subscribed to it will be notified of the change.
   }
 
   logIn(logInName: string, password: string): Observable<boolean> {
@@ -32,10 +41,8 @@ export class AuthService {
           const foundUser = this.fetchedUsersList.find((user) => user.loginName === logInName && user.password === password);
 
           if (foundUser) {
-            localStorage.setItem('currentUserData', JSON.stringify(foundUser));
-            // const currentUserData = localStorage.getItem('currentUserData');
-            // const foundUserData: User | null = currentUserData ? JSON.parse(currentUserData) : null;            
-
+            localStorage.setItem('currentUserData', JSON.stringify(foundUser)); // converting foundUser User object into Json string format and store it into localStorage.
+            this.currentUserSubject.next(foundUser); //  when a user logs in successfully, the currentUserSubject is updated with the foundUser. This is done using currentUserSubject.next(foundUser)
             console.log('User found and logged in successfully: ' + foundUser.id);
             this.isAuthenticated = true;
 
