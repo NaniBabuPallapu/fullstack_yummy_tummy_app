@@ -1,1 +1,56 @@
-<p>orders works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Add your CSS links here -->
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Container for Order Search -->
+            <div class="col-lg-3 bg-light left-container">
+                <div class="p-3">
+                    <h4>Order Search</h4>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search...">
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control">
+                                <option>Filter 1</option>
+                                <option>Filter 2</option>
+                                <option>Filter 3</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Search</button>
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Right Container for Recent Orders -->
+            <div class="col-lg-9 bg-light right-container">
+                <div class="p-3">
+                    <h4>Recent Orders</h4>
+                    <div class="card">
+                        <div class="card-header">
+                            Order #1
+                        </div>
+                        <div class="card-body">
+                            <!-- Order details for Order #1 -->
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            Order #2
+                        </div>
+                        <div class="card-body">
+                            <!-- Order details for Order #2 -->
+                        </div>
+                    </div>
+                    <!-- Add more recent orders as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

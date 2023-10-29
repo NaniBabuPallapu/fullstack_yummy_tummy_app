@@ -18,7 +18,7 @@ export class AuthService {
 
   constructor(private userService: UserService, private router: Router) {
     let storageUser: User | null = null;
-    const storageUserAsStr = localStorage.getItem('currentUserData'); // fetching current user details from localStorage.
+    const storageUserAsStr = localStorage.getItem('currentUserData'); // fetching current user details in the form of JSON strng from localStorage.
     if (storageUserAsStr) {
       storageUser = JSON.parse(storageUserAsStr); // parsing from JSON string to a 'User' object
 
