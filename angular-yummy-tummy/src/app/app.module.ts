@@ -24,6 +24,7 @@ import { UpdateProfileComponent } from './components/users/update-profile/update
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { UserRoutingModule } from './components/users/user-routing.module';
+import { SearchOrderComponent } from './components/order/search-order/search-order.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { UserRoutingModule } from './components/users/user-routing.module';
     DeleteProfileComponent,
     UpdateProfileComponent,
     LoginComponent,
+    SearchOrderComponent,
   ],
   imports: [
     BrowserModule,
