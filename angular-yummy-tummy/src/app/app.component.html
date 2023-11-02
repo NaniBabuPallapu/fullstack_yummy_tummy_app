@@ -1,5 +1,7 @@
-<div class="custom-display-area">
+<div class="custom-display-area" *ngIf="isAuthenticated; else logOut">
     <app-main></app-main>
 </div>
 
-  
+<ng-template #logOut>
+    <app-login></app-login>
+</ng-template>

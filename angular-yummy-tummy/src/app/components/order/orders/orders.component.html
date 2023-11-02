@@ -1,1 +1,74 @@
-<p>orders works!</p>
+<div class="container-fluid">
+    <div class="orders">ORDERS</div>
+    <div class="display">
+        <a class="create-order-custom" href="#">CREATE ORDER</a>
+    </div>
+
+    <div class="row">
+        <!-- Left Container for Order Search -->
+        <div class="col-lg-3 left-container custom-left-container">
+            <div class="header">
+                <div class="title mb-2">ORDER SEARCH</div>
+            </div>
+
+            <div class="p-3">
+
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Filter 1</option>
+                            <option>Filter 2</option>
+                            <option>Filter 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search...">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Filter 1</option>
+                            <option>Filter 2</option>
+                            <option>Filter 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Filter 1</option>
+                            <option>Filter 2</option>
+                            <option>Filter 3</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Filter 1</option>
+                            <option>Filter 2</option>
+                            <option>Filter 3</option>
+                        </select>
+                    </div>
+
+                    <div class="footer">
+                        <button type="reset" class="btn btn-custom-reset">RESET</button>
+                        <button type="submit" class="btn btn-custom-search">SEARCH</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="col-lg-8 center-container custom-center-container">
+            <div class="title mb-2" [ngStyle]="{'padding-top' : '15px'}">RECENT ORDERS</div>
+            <!-- Right Container for Recent Orders -->
+            <!-- <div class="col-lg-7 right-container custom-right-container"> -->
+                <!-- <div class="p-3"> -->
+                    <!-- <div class="scrollable-content"> -->
+                        <app-search-order></app-search-order>
+                        <app-search-order></app-search-order>
+                    <!-- </div> -->
+                <!-- </div> -->
+            <!-- </div> -->
+        </div>
+    </div>
+</div>

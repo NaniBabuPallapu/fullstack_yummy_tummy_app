@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from 'src/app/interfaces/user';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -14,6 +16,9 @@ export class HeaderComponent {
 
 fetchedUserId: number | undefined;
 
+constructor(private router : Router, private authService : AuthService){
+
+}
 
 ngOnInit(){
   this.fetchedUserId = this.fetchedUserId;
@@ -25,5 +30,12 @@ ngOnInit(){
  sideNavToggle(){
   this.menuStatus=!this.menuStatus;
   this.sideNavToggled.emit(this.menuStatus);
+ }
+
+
+ logOut(){
+
+  this.authService.logOut();
+
  }
 }

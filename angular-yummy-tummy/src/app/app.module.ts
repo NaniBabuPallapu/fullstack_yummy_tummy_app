@@ -22,6 +22,9 @@ import { DisplayProfileComponent } from './components/users/display-profile/disp
 import { DeleteProfileComponent } from './components/users/delete-profile/delete-profile.component';
 import { UpdateProfileComponent } from './components/users/update-profile/update-profile.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
+import { UserRoutingModule } from './components/users/user-routing.module';
+import { SearchOrderComponent } from './components/order/search-order/search-order.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,13 +45,16 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DisplayProfileComponent,
     DeleteProfileComponent,
     UpdateProfileComponent,
+    LoginComponent,
+    SearchOrderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule    
+    FormsModule,
+    UserRoutingModule    
   ],
   providers: [],
   bootstrap: [AppComponent]

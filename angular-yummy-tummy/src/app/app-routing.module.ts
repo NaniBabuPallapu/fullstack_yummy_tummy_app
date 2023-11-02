@@ -7,44 +7,54 @@ import { SettingsComponent } from './components/settings/settings.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { DisplayProfileComponent } from './components/users/display-profile/display-profile.component';
-import { CreateProfileComponent } from './components/users/create-profile/create-profile.component';
-import { UpdateProfileComponent } from './components/users/update-profile/update-profile.component';
-
+import { LoginComponent } from './components/login/login.component';
+import { AuthGuard } from './guards/auth.guard';
+import { UserRoutingModule } from './components/users/user-routing.module';
 const routes: Routes = [
   {
-    path : 'dashboard', component : DashboardComponent
+    path: 'dashboard',
+    component: DashboardComponent,
+    canActivate: [AuthGuard]
   },
   {
-    path : 'menu', component : MenuComponent
+    path: 'menu',
+    component: MenuComponent
   },
   {
-    path : 'orders', component : OrdersComponent
+    path: 'orders',
+    component: OrdersComponent
   },
   {
-    path : 'settings', component : SettingsComponent
+    path: 'settings',
+    component: SettingsComponent
   },
   {
-    path : 'about', component : AboutComponent
+    path: 'about',
+    component: AboutComponent
   },
   {
-    path : 'contactUs', component : ContactUsComponent
+    path: 'contactUs',
+    component: ContactUsComponent
   },
   {
-    path : 'users',component : DisplayProfileComponent
+    path: 'login',
+    component: LoginComponent,
   },
   {
-    path : 'create-user', component : CreateProfileComponent
+    path: 'user',
+    component: DisplayProfileComponent,
+    children: UserRoutingModule.routes,
   },
   {
-    path : 'update-user/:id', component : UpdateProfileComponent
-  },
-  {
-     path: '', redirectTo: 'dashboard', pathMatch: 'full' 
+    path: '', redirectTo: 'login', pathMatch: 'full'
   }
 ];
 
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
+
+
 })
 export class AppRoutingModule { }

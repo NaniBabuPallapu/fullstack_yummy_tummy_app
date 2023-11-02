@@ -13,7 +13,7 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class DisplayProfileComponent implements OnInit {
 
-  singleUser: User = {} as User;
+  singleUser!: User | null;
   singleUserData$!: Observable<User>;
   allUsers!: User[];
   selectedId!: number;
@@ -21,17 +21,21 @@ export class DisplayProfileComponent implements OnInit {
 
 
   constructor(private userService: UserService, private debugService: DebugService, private activatedRoute: ActivatedRoute) {
+    this.singleUser = this.userService.getUser();
 
   }
 
   ngOnInit() {
     this.debugService.info("display-profile component has been initialized");
-    this.getUsers();
 
+    
+
+    //// this.getUsers();
+    // this.singleUser = this.userService.getUser();
 
     this.singleUserData$ = this.activatedRoute.paramMap.pipe(
       switchMap(params => {
-        this.selectedId = (params.get('id')) !== null ? Number(params.get('id')) : 1;
+        this.selectedId = Number(this.singleUser?.id);
         return this.userService.getUserById(this.selectedId);
       })
     );
@@ -44,11 +48,11 @@ export class DisplayProfileComponent implements OnInit {
   }
 
 
-  getUsers() {
-    this.userService.getAllUsers().subscribe((data) => {
-      this.allUsers = data;
-      console.log("fetching All Users: "+"\n "+ JSON.stringify(this.allUsers));
-    })
-  }
+  // getUsers() {
+  //   this.userService.getAllUsers().subscribe((data) => {
+  //     this.allUsers = data;
+  //     console.log("fetching All Users: "+"\n "+ JSON.stringify(this.allUsers));
+  //   })
+  // }
 
 }

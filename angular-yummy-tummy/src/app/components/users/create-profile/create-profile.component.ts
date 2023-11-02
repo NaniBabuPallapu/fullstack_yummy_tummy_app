@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { User } from 'src/app/interfaces/user';
@@ -15,6 +15,14 @@ import { PhoneNumberValidator } from 'src/app/validators/phone-number-validator'
 export class CreateProfileComponent implements OnInit {
 
   userFormData!: FormGroup;
+
+  // @Input() public createProfile! : boolean; // you can write below as well.
+
+  @Input('createProfile') public signUp! : boolean;
+
+  // sending this property to login component
+@Output() public singInBack = new EventEmitter<boolean>();
+
 
   addUserProfile: User = {} as User;
 
@@ -34,6 +42,8 @@ export class CreateProfileComponent implements OnInit {
       email_: new FormControl(''),
       phone_: new FormControl('', [Validators.required, PhoneNumberValidator])  // customValidation for Phone number
     });
+
+    console.log('signUpCheck value : '+this.signUp);
 
   }
 
@@ -63,16 +73,15 @@ export class CreateProfileComponent implements OnInit {
     if (this.addUserProfile != null) {
       this.userService.createUser(this.addUserProfile).subscribe((data) => {
         console.log("fetched single user based on Id : " + JSON.stringify(this.addUserProfile));
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/login']);
       });
     }
 
-
-
   }
 
-
-
+  backToSignIn(){
+    this.singInBack.emit(true);
+  }
 
 
 }
