@@ -70,5 +70,6 @@ export class AuthService {
     localStorage.setItem('isAuthenticated', 'false');
 
     this.router.navigate(['/login']);
+    location.reload();
   }
 }

@@ -1,4 +1,4 @@
-package com.food.app.controler;
+package com.food.app.resource;
 
 import com.food.app.domain.User;
 import com.food.app.service.UserService;
@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api")
-public class UserController {
+public class UserResource {
 
     @Autowired
     UserService userService;

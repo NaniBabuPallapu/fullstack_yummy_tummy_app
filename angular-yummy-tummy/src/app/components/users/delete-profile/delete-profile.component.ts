@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { catchError, throwError } from 'rxjs';
 import { User } from 'src/app/interfaces/user';
+import { AuthService } from 'src/app/services/auth.service';
 import { DebugService } from 'src/app/services/debug.service';
 import { UserService } from 'src/app/services/user.service';
 
@@ -14,7 +15,7 @@ export class DeleteProfileComponent implements OnInit {
 
   fetchedUser!: User | null ;
 
-  constructor(private debugService: DebugService, private router: Router, private userService: UserService, private activatedRoute: ActivatedRoute) {
+  constructor(private debugService: DebugService, private router: Router, private userService: UserService, private activatedRoute: ActivatedRoute, private authService : AuthService) {
     this.fetchedUser  = this.userService.getUser();
 
   }
@@ -51,7 +52,7 @@ export class DeleteProfileComponent implements OnInit {
           });
         }
       });
-      this.router.navigate(['/dashboard']);
+      this.authService.logOut();
 
     }
 
