@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { OrdersComponent } from './components/order/orders/orders.component';
+import { OrderComponent } from './components/order/order.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
@@ -21,8 +21,8 @@ const routes: Routes = [
     component: MenuComponent
   },
   {
-    path: 'orders',
-    component: OrdersComponent
+    path: 'order',
+    loadChildren: () => import('./components/order/order.module').then(m => m.OrderModule),
   },
   {
     path: 'settings',

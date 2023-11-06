@@ -11,11 +11,10 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { CaptilizePipe } from './custom_pipes/captilize.pipe';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { OrdersComponent } from './components/order/orders/orders.component';
+import { OrderComponent } from './components/order/order.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-import { CreateOrderComponent } from './components/order/create-order/create-order.component';
 import { DeleteOrderComponent } from './components/order/delete-order/delete-order.component';
 import { CreateProfileComponent } from './components/users/create-profile/create-profile.component';
 import { DisplayProfileComponent } from './components/users/display-profile/display-profile.component';
@@ -25,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { UserRoutingModule } from './components/users/user-routing.module';
 import { SearchOrderComponent } from './components/order/search-order/search-order.component';
+import { OrderProcessComponent } from './components/order/order-process/order-process.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,11 +35,10 @@ import { SearchOrderComponent } from './components/order/search-order/search-ord
     CaptilizePipe,
     DashboardComponent,
     MenuComponent,
-    OrdersComponent,
+    OrderComponent,
     SettingsComponent,
     AboutComponent,
     ContactUsComponent,
-    CreateOrderComponent,
     DeleteOrderComponent,
     CreateProfileComponent,
     DisplayProfileComponent,
@@ -47,6 +46,7 @@ import { SearchOrderComponent } from './components/order/search-order/search-ord
     UpdateProfileComponent,
     LoginComponent,
     SearchOrderComponent,
+    OrderProcessComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +54,7 @@ import { SearchOrderComponent } from './components/order/search-order/search-ord
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    UserRoutingModule    
+    UserRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
