@@ -1,3 +1,69 @@
-p{
+.headline-text{
+    padding-left: 20px;
+    font-size: 14px;
+    padding-right: 5px;
+    font-weight: normal;
     text-align: center;
 }
+.delete-order a{
+    text-decoration: none;
+    color: rgb(218, 83, 83);
+}
+
+.create-new-order a{
+    text-decoration: none;
+    color: #1e3659;
+}
+.value-text{
+    text-align: center;
+    font-size:medium;
+    font-weight: bold;
+    padding-right: 20px;
+}
+.fa-arrow-left{
+    padding-right: 10px;
+}
+.create-new-order{
+    position: absolute;
+    top: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    left: 5%;
+}
+
+.create-order{
+    padding-right: 10px;
+}
+
+.order-status{
+    padding-left: 10px;
+}
+
+
+
+.delete-order{
+    position: absolute;
+    top: 10%;
+    font-size: 16px;
+    font-weight: bold;
+    right: 5%;
+}
+
+.fa-trash{
+    padding-right: 10px;
+}
+
+.header{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    font-size: 18px;
+    font-weight: bold;
+    right: 2%;
+    margin: 10px;
+    border: 1px solid #1e3659;
+    background-color: #fff !important;
+    padding: 10px;
+}
+
+

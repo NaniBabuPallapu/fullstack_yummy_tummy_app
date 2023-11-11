@@ -35,7 +35,6 @@ import { OrderProcessComponent } from './components/order/order-process/order-pr
     CaptilizePipe,
     DashboardComponent,
     MenuComponent,
-    OrderComponent,
     SettingsComponent,
     AboutComponent,
     ContactUsComponent,
@@ -45,8 +44,6 @@ import { OrderProcessComponent } from './components/order/order-process/order-pr
     DeleteProfileComponent,
     UpdateProfileComponent,
     LoginComponent,
-    SearchOrderComponent,
-    OrderProcessComponent,
   ],
   imports: [
     BrowserModule,
