@@ -1,11 +1,91 @@
-.container-fluid{
-    height: 100vh;
+.container-fluid {
+    margin-top: 1%;
+    height: 25vh;
+    border: 1px solid #1e3659;
     width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    color: #1e3659;
+    background-color: #FFFFF0;
+    font-family: HelveticaNeueLTStd-Bd;
+    letter-spacing: 1px;
+
+}
+
+.container-fluid-custom {
+    top: 27%;
+    left: 5%;
+    right: 5%;
+    height: 55vh;
+    border: 1px solid #1e3659;
+    width: 93%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: relative;
+    position: fixed;
     color: #1e3659;
-    background-color: #FFFFF0; /* Pure white background */
+    background-color: #FFFFF0;
+    /* Pure white background */
+    font-family: HelveticaNeueLTStd-Bd;
+    letter-spacing: 1px;
     
+
+
 }
+
+mat-horizontal-stepper {
+
+    top: 27%;
+    margin-top: 0%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+    position:fixed;
+    height: 5vh;
+    width: 93%;
+    font-family: HelveticaNeueLTStd-Bd;
+    border: 1px solid #1e3659;
+    background-color: #FFFFF0;
+    letter-spacing: 1px;
+    background-color: #fff !important;
+
+
+
+
+}
+
+.button-container{
+    top: 83%;
+    left: 5%;
+    position:fixed;
+    height: 6vh;
+    width: 93%;
+    font-family: HelveticaNeueLTStd-Bd;
+    border: 1px solid #1e3659;
+    background-color: #FFFFF0;
+    letter-spacing: 1px;
+
+}
+.button-container .align-items-right{
+    margin-left: 75%;
+}
+button {
+
+    color: #1e3659;
+    font-size: 12px;
+    font-weight: bold;
+    border: 1px solid #1e3659;
+    background-color: #FFFFF0;
+    text-decoration: none;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 3px;
+    align-content:end;
+    margin-left: 5px;
+
+}
+
+
+  

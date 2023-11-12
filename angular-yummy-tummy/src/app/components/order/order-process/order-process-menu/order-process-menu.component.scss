@@ -1,23 +1,17 @@
-.container-fluid{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-    color: #1e3659;
-    background-color: #FFFFF0; /* Pure white background */
-    
-}
-
-.header{
-    position: absolute;
-    top: 10%;
-    left: 5%;
-    font-size: 18px;
-    font-weight: bold;
-    right: 5%;
-    margin: 10px;
+.custom-center-container{
+    background-color: #FFFFF0;
     border: 1px solid #1e3659;
+    top: 20%;
+    margin-left: -15px;
+    color: #FFFFF0;
+    width: 100%;
+    height: 40%;
+    overflow-x: hidden;
+    bottom: 0;
+    position: fixed;
+    margin-top: 10%;
+    margin-bottom: 7%;
     background-color: #fff !important;
+
+
 }

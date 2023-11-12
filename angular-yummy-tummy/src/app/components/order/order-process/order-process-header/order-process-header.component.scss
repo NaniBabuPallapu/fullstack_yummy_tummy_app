@@ -24,7 +24,7 @@
     padding-right: 10px;
 }
 .create-new-order{
-    position: absolute;
+    position: fixed;
     top: 10%;
     font-size: 18px;
     font-weight: bold;
@@ -42,7 +42,7 @@
 
 
 .delete-order{
-    position: absolute;
+    position: fixed;
     top: 10%;
     font-size: 16px;
     font-weight: bold;
@@ -54,13 +54,15 @@
 }
 
 .header{
-    position: absolute;
+    position: fixed;
+    height: 10vh;
     top: 15%;
-    left: 5%;
+    left: 4.4%;
+    right: 1.4%;
+    margin: 10px;
     font-size: 18px;
     font-weight: bold;
-    right: 2%;
-    margin: 10px;
+    bottom: 75%;
     border: 1px solid #1e3659;
     background-color: #fff !important;
     padding: 10px;

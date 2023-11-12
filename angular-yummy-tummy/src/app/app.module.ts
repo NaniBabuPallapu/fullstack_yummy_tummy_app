@@ -11,7 +11,6 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { CaptilizePipe } from './custom_pipes/captilize.pipe';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { OrderComponent } from './components/order/order.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
@@ -23,8 +22,10 @@ import { UpdateProfileComponent } from './components/users/update-profile/update
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { UserRoutingModule } from './components/users/user-routing.module';
-import { SearchOrderComponent } from './components/order/search-order/search-order.component';
-import { OrderProcessComponent } from './components/order/order-process/order-process.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatMenuModule} from '@angular/material/menu';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,6 +53,9 @@ import { OrderProcessComponent } from './components/order/order-process/order-pr
     ReactiveFormsModule,
     FormsModule,
     UserRoutingModule,
+    BrowserAnimationsModule,
+    MatStepperModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

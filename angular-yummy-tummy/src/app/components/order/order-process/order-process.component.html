@@ -1,12 +1,53 @@
-
-
-<div class="container-fluid">
-    <div class="row-lg-12">
+<div class="container-fluid custom-top-container">
+    <div class="row">
+        <div class="row-lg-12 center-container custom-header-container">
             <app-order-process-header></app-order-process-header>
+        </div>
     </div>
 </div>
 
-<div>
-    <app-order-process-menu></app-order-process-menu>
-</div>
+<div class="container-fluid-custom">
 
+    <mat-horizontal-stepper>
+
+        <mat-step label="menu">
+            <ng-template matStepLabel>MENU</ng-template>
+            <ng-container>
+                <app-order-process-menu></app-order-process-menu>
+            </ng-container>
+        </mat-step>
+
+        <mat-step label="shipping">
+            <ng-template matStepLabel>SHIPPING</ng-template>
+            <ng-container>
+                <!-- Content for the Shipping step -->
+            </ng-container>
+        </mat-step>
+
+        <mat-step label="payment">
+            <ng-template matStepLabel>PAYMENT</ng-template>
+            <ng-container>
+                <!-- Content for the Payment step -->
+            </ng-container>
+        </mat-step>
+
+        <mat-step label="review">
+            <ng-template matStepLabel>REVIEW & FINALIZE</ng-template>
+            <ng-container>
+                <!-- Content for the Review step -->
+            </ng-container>
+        </mat-step>
+
+    </mat-horizontal-stepper>
+
+    <!-- Buttons outside the stepper -->
+
+</div>
+<div class="button-container">
+    <div class="align-items-right">
+        <button mat-button *ngIf="stepper && stepper.selectedIndex > 0" (click)="stepper.previous()" >BACK</button>
+        <button mat-button *ngIf="stepper && stepper.selectedIndex < stepper.steps.length - 1" (click)="stepper.next()" >NEXT</button>
+        <button mat-button *ngIf="stepper && stepper.selectedIndex === stepper.steps.length - 1" type="submit">SUBMIT</button>    
+    </div>
+    
+</div>

@@ -9,6 +9,11 @@ import { OrderProcessPaymentComponent } from './order-process-payment/order-proc
 import { OrderProcessReviewComponent } from './order-process-review/order-process-review.component';
 import { OrderProcessShippingComponent } from './order-process-shipping/order-process-shipping.component';
 import { OrderProcessComponent } from './order-process.component';
+import { MatStepperModule} from '@angular/material/stepper';
+import { MatMenuModule} from '@angular/material/menu';
+import { SearchOrderComponent } from '../search-order/search-order.component';
+import { OrderItemComponent } from './order-process-menu/order-item/order-item.component';
+
 
 
 @NgModule({
@@ -19,13 +24,17 @@ import { OrderProcessComponent } from './order-process.component';
       OrderProcessPaymentComponent,
       OrderProcessReviewComponent,
       OrderProcessShippingComponent,
+      OrderItemComponent
       
   ],
   imports: [
     CommonModule,
     OrderProcessRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatStepperModule,
+    MatMenuModule
+  
   ]
 })
 export class OrderProcessModule {

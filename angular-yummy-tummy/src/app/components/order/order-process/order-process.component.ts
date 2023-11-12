@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatStepper } from '@angular/material/stepper';
 
 @Component({
   selector: 'app-order-process',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./order-process.component.scss']
 })
 export class OrderProcessComponent {
+  @ViewChild(MatStepper) stepper!: MatStepper;
 
 }
