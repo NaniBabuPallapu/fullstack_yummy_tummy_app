@@ -1,23 +1,26 @@
 .footer {
-    background-color: #FE6F2F;
+    background-color: #FFFFF0;
     position: fixed;
+    color:#1e3659;
     bottom: 0;
     width: 100%;
     height: 5rem;
     // z-index: 2; 
     cursor: pointer;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    // background-color: #FE6F2F;
-    border-top: 1px solid rgba(255, 255, 255, 0.3); //#EFEFEF; bottom border for header
+    // background-color: #FFFFF0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); //#1e3659; bottom border for header
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
 
 }
 
 a {
     text-decoration: none;
-    color: #EFEFEF;
+    color: #1e3659;
     font-weight: bolder;
 }
 
@@ -36,12 +39,23 @@ i {
 }
 
 .custom-playstore {
-    background-color: black;
+    background-color: #FFFFF0;
     border-radius: 5px;
     // padding-right: 20px;
     padding: 8px;
+    border: 1px solid #1e3659;
 }
 
 i:hover{
     color: #1e3659;
 }
+
+i{
+    color: #8891ab;
+
+}
+
+i:active{
+    color: #1e3659;
+}
+

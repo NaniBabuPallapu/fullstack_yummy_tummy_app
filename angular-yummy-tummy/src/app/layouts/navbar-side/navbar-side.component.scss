@@ -1,10 +1,10 @@
 .side-nav-content {
-    color: #EFEFEF;
+    color: #1e3659;
     width: 230px;
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    background-color: #FE6F2F;
+    background-color: #FFFFF0;
 }
 
 .nav-list {
@@ -21,8 +21,9 @@
 }
 
 .nav-list-open .nav-list-item:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    // background-color: #EFEFEF;
+    // background-color: rgba(255, 255, 255, 0.3);
+    // background-color: #1e3659;
+    background-color: lightgray;
     color: #1e3659;
     border-radius: 10px;
 
@@ -46,9 +47,10 @@
 
 .nav-list-item:hover {
     color: #1e3659;
-    background-color: rgba(255, 255, 255, 0.3);
-    // background-color: #EFEFEF;
+    // background-color: rgba(255, 255, 255, 0.3);
+    // background-color: #1e3659;
     border-radius: 20px;
+    background-color: lightgray;
 
 }
 
@@ -60,7 +62,7 @@
 
 a {
     text-decoration: none;
-    color: #EFEFEF;
+    color: #1e3659;
     font-weight: bolder;
 }
 
@@ -71,4 +73,7 @@ a {
 
 .icon.active{
     color: #1e3659;
+}
+.icon{
+    color: #8891ab;
 }

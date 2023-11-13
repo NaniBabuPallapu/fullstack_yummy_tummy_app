@@ -11,7 +11,6 @@ import { OrderProcessShippingComponent } from './order-process-shipping/order-pr
 import { OrderProcessComponent } from './order-process.component';
 import { MatStepperModule} from '@angular/material/stepper';
 import { MatMenuModule} from '@angular/material/menu';
-import { SearchOrderComponent } from '../search-order/search-order.component';
 import { OrderItemComponent } from './order-process-menu/order-item/order-item.component';
 
 

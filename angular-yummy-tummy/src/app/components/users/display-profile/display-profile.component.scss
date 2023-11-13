@@ -5,8 +5,8 @@
 // }
 
 .user-profile {
-    background-color: #FE6F2F;
-    color: #EFEFEF; /* Text color */
+    background-color: #FFFFF0;
+    color: #1e3659; /* Text color */
     height: 100vh; /* 100% viewport height */
     display: flex;
     justify-content: center;
@@ -62,3 +62,8 @@
   }
 
   
+  h4{
+    font-family: HelveticaNeueLTStd-Bd;
+    font-size: 18px;
+    font-weight: bold;
+}

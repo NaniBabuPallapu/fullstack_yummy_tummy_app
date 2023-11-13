@@ -5,9 +5,7 @@ import { OrderRoutingModule } from './order-routing.module';
 import { OrderSearchPageComponent } from './order-search-page/order-search-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchOrderComponent } from './search-order/search-order.component';
-import { OrderProcessComponent } from './order-process/order-process.component';
 import { OrderComponent } from './order.component';
-import { OrderItemComponent } from './order-process/order-process-menu/order-item/order-item.component';
 
 
 @NgModule({

@@ -1,7 +1,7 @@
 .container-fluid {
     margin-top: 1%;
-    height: 25vh;
-    border: 1px solid #1e3659;
+    height: 20vh;
+    // border: 1px solid #1e3659;
     width: 100%;
     justify-content: center;
     flex-direction: column;
@@ -14,12 +14,11 @@
 }
 
 .container-fluid-custom {
-    top: 27%;
-    left: 5%;
-    right: 5%;
-    height: 55vh;
-    border: 1px solid #1e3659;
-    width: 93%;
+    top: 22%;
+    height: 62vh;
+    bottom: 0%;
+    // border: 1px solid #1e3659;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -36,12 +35,13 @@
 
 mat-horizontal-stepper {
 
-    top: 27%;
+    top: 22%;
     margin-top: 0%;
     margin-right: 5%;
+    margin-left: 5%;
     padding-bottom: 5%;
     position:fixed;
-    height: 5vh;
+    height: 1vh;
     width: 93%;
     font-family: HelveticaNeueLTStd-Bd;
     border: 1px solid #1e3659;
@@ -50,18 +50,31 @@ mat-horizontal-stepper {
     background-color: #fff !important;
 
 
+}
+
+  
 
 
+::ng-deep .mat-step-header[aria-selected='true'] {
+    .mat-step-icon{
+        background-color: #4cd964;
+        font-family: HelveticaNeueLTStd-Bd;
+        border: solid 2px #4cd964;
+    }
+}
+::ng-deep .mat-step-header .mat-step-label{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .button-container{
     top: 83%;
-    left: 5%;
     position:fixed;
     height: 6vh;
-    width: 93%;
+    width: 100%;
     font-family: HelveticaNeueLTStd-Bd;
-    border: 1px solid #1e3659;
+    // border: 1px solid #1e3659;
     background-color: #FFFFF0;
     letter-spacing: 1px;
 
@@ -75,17 +88,20 @@ button {
     font-size: 12px;
     font-weight: bold;
     border: 1px solid #1e3659;
-    background-color: #FFFFF0;
+    background-color: #fff;
     text-decoration: none;
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 10px;
     padding-bottom: 10px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     align-content:end;
     margin-left: 5px;
 
 }
 
+button:hover{
+    background-color:lightgray;
+}
 
   

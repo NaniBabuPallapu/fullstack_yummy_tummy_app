@@ -21,6 +21,7 @@
             <ng-template matStepLabel>SHIPPING</ng-template>
             <ng-container>
                 <!-- Content for the Shipping step -->
+                <app-order-process-shipping></app-order-process-shipping>
             </ng-container>
         </mat-step>
 
@@ -28,6 +29,7 @@
             <ng-template matStepLabel>PAYMENT</ng-template>
             <ng-container>
                 <!-- Content for the Payment step -->
+                <app-order-process-payment></app-order-process-payment>
             </ng-container>
         </mat-step>
 
@@ -35,6 +37,8 @@
             <ng-template matStepLabel>REVIEW & FINALIZE</ng-template>
             <ng-container>
                 <!-- Content for the Review step -->
+                <app-order-process-review></app-order-process-review>
+
             </ng-container>
         </mat-step>
 
@@ -49,5 +53,4 @@
         <button mat-button *ngIf="stepper && stepper.selectedIndex < stepper.steps.length - 1" (click)="stepper.next()" >NEXT</button>
         <button mat-button *ngIf="stepper && stepper.selectedIndex === stepper.steps.length - 1" type="submit">SUBMIT</button>    
     </div>
-    
 </div>

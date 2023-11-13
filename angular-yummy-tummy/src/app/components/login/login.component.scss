@@ -1,5 +1,5 @@
 .create-profile{
-    // background-color: #EFEFEF;
+    // background-color: #1e3659;
 	background: linear-gradient(#000,rgb(226, 239, 239),hsl(0, 0%, 0%));
     // animation: animate 5s linear infinite;
 
@@ -13,7 +13,7 @@
     background-attachment: fixed; /* Fix the background image in place */
     background-color: #fff; 
 
-    // color: #EFEFEF;
+    // color: #1e3659;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -23,11 +23,20 @@
     padding-top: 10px;
     padding-bottom: 1px;
     font-weight: bold;
+    font-family: HelveticaNeueLTStd-Bd;
+    font-size: 14px;
+
 }
 
+h4{
+    font-family: HelveticaNeueLTStd-Bd;
+    font-size: 18px;
+    font-weight: bold;
+
+}
 .create-profile-css {
-    // background-color: #FE6F2F;
-    // color: #EFEFEF;
+    // background-color: #FFFFF0;
+    // color: #1e3659;
     color: #1e3659;
     background-color: #EFEFEF;
     border-radius: 10px;
@@ -42,6 +51,7 @@
     font-weight: bold;
     margin: 25%;
     padding: 30px;
+
 }
 
 .create-profile .fa-user {
@@ -89,7 +99,7 @@
     background-color: #1e3659;
     color: #EFEFEF;
     font-weight: bold;
-    border: 1px solid lightblue;
+    border: 1px solid lightgray;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 
 }
