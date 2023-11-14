@@ -13,15 +13,18 @@ public class OrderItem {
     @Column(name = "order_item_id")
     private Integer orderItemId;
 
-    @Size(max = 20)
+    @Size(max = 100)
     @Column(name = "item_name")
     private String itemName;
+
+    @Column(name="item_img")
+    private String itemImage;
 
     @Size(max = 255)
     @Column(name = "item_description")
     private String itemDescription;
 
-    @Size(max = 40)
+    @Size(max = 100)
     @Column(name = "restaurant_name")
     private String itemFromRestaurant;
 

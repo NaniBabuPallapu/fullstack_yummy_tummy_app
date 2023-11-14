@@ -26,7 +26,6 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatMenuModule} from '@angular/material/menu';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { OrderItemComponent } from './components/order/order-process/order-process-menu/order-item/order-item.component';
 import { MenuItemListComponent } from './components/menu/menu-item-list/menu-item-list.component';
 @NgModule({
   declarations: [
