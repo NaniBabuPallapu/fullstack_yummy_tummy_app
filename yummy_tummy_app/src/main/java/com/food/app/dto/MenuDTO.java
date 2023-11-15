@@ -9,6 +9,8 @@ public class MenuDTO {
 
     private String itemName;
 
+    private Boolean nonVeg;
+
     private String itemImage;
 
 
@@ -29,7 +31,7 @@ public class MenuDTO {
     public MenuDTO() {
     }
 
-    public MenuDTO(String itemName, String itemImage, String itemDescription, String itemFromRestaurant, BigDecimal itemPrice, String itemType, String distance) {
+    public MenuDTO(String itemName, String itemImage, String itemDescription, String itemFromRestaurant, BigDecimal itemPrice, String itemType, String distance, Boolean nonVeg) {
         this.itemName = itemName;
         this.itemImage = itemImage;
         this.itemDescription = itemDescription;
@@ -37,6 +39,7 @@ public class MenuDTO {
         this.itemPrice = itemPrice;
         this.itemType = itemType;
         this.distance = distance;
+        this.nonVeg = nonVeg;
     }
 
     public Integer getItemId() {
@@ -103,11 +106,20 @@ public class MenuDTO {
         this.distance = distance;
     }
 
+    public Boolean getNonVeg() {
+        return nonVeg;
+    }
+
+    public void setNonVeg(Boolean nonVeg) {
+        this.nonVeg = nonVeg;
+    }
+
     @Override
     public String toString() {
         return "MenuDTO{" +
                 "itemId=" + itemId +
                 ", itemName='" + itemName + '\'' +
+                ", nonVeg='" + nonVeg + '\'' +
                 ", itemImage='" + itemImage + '\'' +
                 ", itemDescription='" + itemDescription + '\'' +
                 ", itemFromRestaurant='" + itemFromRestaurant + '\'' +

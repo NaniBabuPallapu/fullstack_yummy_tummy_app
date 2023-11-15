@@ -20,6 +20,9 @@ public class OrderItem {
     @Column(name="item_img")
     private String itemImage;
 
+    @Column(name = "non_veg")
+    private Boolean nonVeg;
+
     @Size(max = 255)
     @Column(name = "item_description")
     private String itemDescription;

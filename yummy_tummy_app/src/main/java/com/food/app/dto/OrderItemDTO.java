@@ -10,6 +10,9 @@ public class OrderItemDTO {
 
     private String itemName;
 
+    private Boolean nonVeg;
+
+
     private String itemDescription;
 
 

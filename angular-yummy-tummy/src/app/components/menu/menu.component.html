@@ -1,12 +1,8 @@
 <div class="order-search-items col-lg-12">
     <div class="title mb-2" >MENU</div>
-    <div class="custom-menu"><div class="arrange">ITEMS</div>
-
-        <app-menu-item-list></app-menu-item-list>
-        <app-menu-item-list></app-menu-item-list>
-        <app-menu-item-list></app-menu-item-list>
-        <app-menu-item-list></app-menu-item-list>
-        <app-menu-item-list></app-menu-item-list>
-        <app-menu-item-list></app-menu-item-list>
+    <div class="custom-menu" *ngIf="menuItemList && menuItemList.length>0">
+        <div *ngFor="let menuItem of menuItemList ; index as i">
+            <app-menu-item-list [menuItemObj]="menuItem"></app-menu-item-list>
+        </div>
     </div>
 </div>

@@ -19,6 +19,7 @@ public class MenuMappingImpl implements MenuMapper {
         Menu menu = new Menu();
 
         menu.setItemName(menuDTO.getItemName());
+        menu.setNonVeg(menuDTO.getNonVeg());
         menu.setItemType(menuDTO.getItemType());
         menu.setItemDescription(menuDTO.getItemDescription());
         menu.setDistance(menuDTO.getDistance());
@@ -38,11 +39,12 @@ public class MenuMappingImpl implements MenuMapper {
         MenuDTO menuDTO = new MenuDTO();
 
         menuDTO.setItemName(menu.getItemName());
+        menuDTO.setNonVeg(menu.getNonVeg());
         menuDTO.setItemType(menu.getItemType());
         menuDTO.setItemDescription(menu.getItemDescription());
         menuDTO.setDistance(menu.getDistance());
         menuDTO.setItemPrice(menu.getItemPrice());
-        menuDTO.setItemImage(menu.getItemImage());
+        menuDTO.setItemImage(menu.getItemImage().split("/src")[1]);
         menuDTO.setItemFromRestaurant(menu.getItemFromRestaurant());
 
         return menuDTO;

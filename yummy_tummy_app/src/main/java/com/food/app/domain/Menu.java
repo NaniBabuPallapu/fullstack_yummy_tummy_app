@@ -16,6 +16,10 @@ public class Menu {
     @Column(name = "item_name")
     private String itemName;
 
+    @Column(name = "non_veg")
+    private Boolean nonVeg;
+
+
     @Column(name="item_img")
     private String itemImage;
 
@@ -37,7 +41,7 @@ public class Menu {
     private String distance;
 
 
-    public Menu(Integer itemId, String itemName, String itemImage, String itemDescription, String itemFromRestaurant, Boolean isItemAvailable, BigDecimal itemPrice, String itemType, String distance) {
+    public Menu(Integer itemId, String itemName, String itemImage, String itemDescription, String itemFromRestaurant, BigDecimal itemPrice, String itemType, String distance, Boolean nonVeg) {
         this.itemId = itemId;
         this.itemName = itemName;
         this.itemImage = itemImage;
@@ -46,6 +50,7 @@ public class Menu {
         this.itemPrice = itemPrice;
         this.itemType = itemType;
         this.distance = distance;
+        this.nonVeg = nonVeg;
     }
 
     public Menu(String itemName, String itemImage, String itemDescription, String itemFromRestaurant, Boolean isItemAvailable, BigDecimal itemPrice, String itemType, String distance) {
@@ -126,11 +131,20 @@ public class Menu {
         this.distance = distance;
     }
 
+    public Boolean getNonVeg() {
+        return nonVeg;
+    }
+
+    public void setNonVeg(Boolean nonVeg) {
+        this.nonVeg = nonVeg;
+    }
+
     @Override
     public String toString() {
         return "Menu{" +
                 "itemId=" + itemId +
                 ", itemName='" + itemName + '\'' +
+                ", nonVeg='" + nonVeg + '\'' +
                 ", itemImage='" + itemImage + '\'' +
                 ", itemDescription='" + itemDescription + '\'' +
                 ", itemFromRestaurant='" + itemFromRestaurant + '\'' +
