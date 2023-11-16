@@ -16,7 +16,7 @@ public class Menu {
     @Column(name = "item_name")
     private String itemName;
 
-    @Column(name = "non_veg")
+    @Column(name = "non_veg", columnDefinition = "TINYINT(1) DEFAULT 0")
     private Boolean nonVeg;
 
 

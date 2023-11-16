@@ -20,7 +20,7 @@
                 {{menuItemObj.itemPrice | currency:'INR'}}</div>
             <div class="item-restaurant">From : {{menuItemObj.itemFromRestaurant ? menuItemObj.itemFromRestaurant :
                 '-'}}</div>
-            <div class="item-type">Food Category : {{menuItemObj.itemType ? menuItemObj.itemType : '-'}}</div>
+            <div class="item-type *ngIF!==null && menuItemObj.itemType!==undefined">Food Category : {{menuItemObj.itemType | uppercase}}</div>
             <div class="item-distance">Distance : {{menuItemObj.distance ? menuItemObj.distance : '-'}} away</div>
         </div>
         <img src="{{menuItemObj.itemImage}}" class="card-img-top" alt="Item Image">

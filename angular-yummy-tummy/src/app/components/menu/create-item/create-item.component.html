@@ -25,7 +25,8 @@
                 <label for="price" class="form-label">Item Price : </label>
                 <input type="number" class="form-control" formControlName="itemPrice_" id="price">
             </div>
-
+                <input type="checkbox"  class="form-checkbox" formControlName="nonVeg_" id="nonVeg">Non-Veg
+                <small [ngStyle]="{'font-weight':'bold'}">(select this checkbox if the item is non-veg)</small>
             <div class="form-group">
                 <label for="type" class="form-label">Select Item Type : </label>
                 <select id="type" class="form-control" name="food" formControlName="itemType_">
