@@ -66,7 +66,6 @@ export class LoginComponent implements OnInit {
         this.logInFailed = true;
         this.passwordValue?.clearValidators;
         this.passwordValue?.updateValueAndValidity;
-        location.reload();
       }
     })
 

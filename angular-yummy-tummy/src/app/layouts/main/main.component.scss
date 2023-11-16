@@ -5,8 +5,8 @@ app-header {
     height: 4rem;
     z-index: 2;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    background-color: #FE6F2F;
-    border-bottom: 1px solid  rgba(255, 255, 255, 0.3); //#EFEFEF; bottom border for header
+    background-color: #FFFFF0;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.3); //#1e3659; bottom border for header
 
 }
 
@@ -19,7 +19,7 @@ main {
 }
 
 .black-border {
-    border: 1px solid black;
+    border: 1px solid #1e3659;
 }
 
 app-navbar-side {
@@ -28,11 +28,11 @@ app-navbar-side {
     width: 60px;
     height: calc(100vh - 4rem);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    background-color: #FE6F2F;
+    background-color: #FFFFF0;
     /* Footer background color (dark gray) */
     //FE6F2F
-    border-top: 1px solid  rgba(255, 255, 255, 0.3); //#EFEFEF top border for sidenavbar
-    border-right: 1px solid  rgba(255, 255, 255, 0.3); //#EFEFEF side border for sidenavbar
+    border-top: 1px solid  rgba(255, 255, 255, 0.3); //#1e3659 top border for sidenavbar
+    border-right: 1px solid  rgba(255, 255, 255, 0.3); //#1e3659 side border for sidenavbar
     overflow-x: hidden;
     white-space: nowrap;
     transition: width 250ms ease-in;
@@ -48,7 +48,7 @@ app-navbar-side {
     left: 250px;
     width: calc(100% - 60px);
     transition: left 250ms ease-in, width 250ms ease-in;
-    background-color: #FE6F2F; /* Footer background color (dark gray) */ //FE6F2F
+    background-color: #FFFFF0; /* Footer background color (dark gray) */ //FE6F2F
 
 
 }

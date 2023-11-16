@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { User } from 'src/app/interfaces/user';
+import { AuthService } from 'src/app/services/auth.service';
 import { DebugService } from 'src/app/services/debug.service';
 import { UserService } from 'src/app/services/user.service';
 import { PasswrodValidator } from 'src/app/validators/password-validator';
@@ -28,7 +29,7 @@ export class CreateProfileComponent implements OnInit {
 
   // userFormData: FormGroup = {} as FormGroup; // definedObject instead of undefined  userFormData!: FormGroup;
 
-  constructor(private debugService: DebugService, private router: Router, private userService: UserService, private activatedRoute: ActivatedRoute) {
+  constructor(private debugService: DebugService, private router: Router, private userService: UserService, private activatedRoute: ActivatedRoute, private authService : AuthService) {
 
   }
 
@@ -73,9 +74,11 @@ export class CreateProfileComponent implements OnInit {
     if (this.addUserProfile != null) {
       this.userService.createUser(this.addUserProfile).subscribe((data) => {
         console.log("fetched single user based on Id : " + JSON.stringify(this.addUserProfile));
-        this.router.navigate(['/login']);
+        window.alert("Your Profile Has Been Created Successfully!")
+        this.backToSignIn();
       });
     }
+
 
   }
 

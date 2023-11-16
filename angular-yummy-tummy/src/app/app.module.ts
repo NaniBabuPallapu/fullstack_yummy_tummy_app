@@ -11,11 +11,9 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { CaptilizePipe } from './custom_pipes/captilize.pipe';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { OrdersComponent } from './components/order/orders/orders.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-import { CreateOrderComponent } from './components/order/create-order/create-order.component';
 import { DeleteOrderComponent } from './components/order/delete-order/delete-order.component';
 import { CreateProfileComponent } from './components/users/create-profile/create-profile.component';
 import { DisplayProfileComponent } from './components/users/display-profile/display-profile.component';
@@ -24,7 +22,11 @@ import { UpdateProfileComponent } from './components/users/update-profile/update
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { UserRoutingModule } from './components/users/user-routing.module';
-import { SearchOrderComponent } from './components/order/search-order/search-order.component';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatMenuModule} from '@angular/material/menu';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenuRoutingModule } from './components/menu/menu-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,19 +36,15 @@ import { SearchOrderComponent } from './components/order/search-order/search-ord
     HeaderComponent,
     CaptilizePipe,
     DashboardComponent,
-    MenuComponent,
-    OrdersComponent,
     SettingsComponent,
     AboutComponent,
     ContactUsComponent,
-    CreateOrderComponent,
     DeleteOrderComponent,
     CreateProfileComponent,
     DisplayProfileComponent,
     DeleteProfileComponent,
     UpdateProfileComponent,
     LoginComponent,
-    SearchOrderComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +52,10 @@ import { SearchOrderComponent } from './components/order/search-order/search-ord
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    UserRoutingModule    
+    UserRoutingModule,
+    BrowserAnimationsModule,
+    MatStepperModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
