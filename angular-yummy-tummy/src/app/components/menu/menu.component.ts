@@ -11,22 +11,10 @@ import { MenuService } from 'src/app/services/menu.service';
 })
 export class MenuComponent implements OnInit{
 
-  menuItemList! : Menu[];
-
-  constructor(private router : Router, private menuService : MenuService, private activatedRoute : ActivatedRoute){
-
+  constructor(){
+    
   }
-
-  ngOnInit() {
-    this.getMenuItemsList();
-  }
-  
-
-  getMenuItemsList() {
-    this.menuService.getMenuItems().subscribe((data) => {
-      this.menuItemList = data
-      console.log("fetched single user based on Id : " + JSON.stringify(this.menuItemList));
-    }
-    );
-  }
+ ngOnInit(){
+   
+ }
 }

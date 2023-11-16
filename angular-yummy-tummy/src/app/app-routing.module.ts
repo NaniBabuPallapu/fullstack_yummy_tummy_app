@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'menu',
-    component: MenuComponent
+    loadChildren:() => import('./components/menu/menu.module').then(m =>m.MenuModule),
   },
   {
     path: 'order',

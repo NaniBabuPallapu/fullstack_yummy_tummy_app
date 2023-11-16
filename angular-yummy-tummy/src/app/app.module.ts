@@ -26,7 +26,7 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatMenuModule} from '@angular/material/menu';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MenuItemListComponent } from './components/menu/menu-item-list/menu-item-list.component';
+import { MenuRoutingModule } from './components/menu/menu-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +36,6 @@ import { MenuItemListComponent } from './components/menu/menu-item-list/menu-ite
     HeaderComponent,
     CaptilizePipe,
     DashboardComponent,
-    MenuComponent,
     SettingsComponent,
     AboutComponent,
     ContactUsComponent,
@@ -46,8 +45,6 @@ import { MenuItemListComponent } from './components/menu/menu-item-list/menu-ite
     DeleteProfileComponent,
     UpdateProfileComponent,
     LoginComponent,
-    MenuItemListComponent
-
   ],
   imports: [
     BrowserModule,
@@ -58,7 +55,7 @@ import { MenuItemListComponent } from './components/menu/menu-item-list/menu-ite
     UserRoutingModule,
     BrowserAnimationsModule,
     MatStepperModule,
-    MatMenuModule
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

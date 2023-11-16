@@ -18,6 +18,6 @@ export class OrderSearchPageComponent  implements OnInit{
   }
 
   navigateToCreateOrder(){
-    this.router.navigate([`order/${this.resourceId}/menu`])
+    this.router.navigate([`order/${this.resourceId}/menu`]);
   }
 }

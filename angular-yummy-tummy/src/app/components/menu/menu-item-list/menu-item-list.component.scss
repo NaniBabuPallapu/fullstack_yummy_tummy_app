@@ -53,14 +53,15 @@
 .triangle {
     position: absolute;
     content: '';
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 10px solid #e74c3c; /* Triangle color */
-    margin-left: 1px;
+    width: 4px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #e74c3c; /* Triangle color */
+    margin-left: 2px;
     margin-bottom: 1px;
     margin-right: 1px;
+    margin-top: 1px;
 }
 
 .circle {
