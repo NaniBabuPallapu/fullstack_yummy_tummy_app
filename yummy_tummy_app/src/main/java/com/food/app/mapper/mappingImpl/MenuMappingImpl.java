@@ -14,10 +14,10 @@ import static com.food.app.enums.StringConstants.regex;
 @Component
 public class MenuMappingImpl implements MenuMapper {
 
-    Pattern pattern = Pattern.compile(regex);
 
     @Override
     public Menu toEntity(MenuDTO menuDTO) {
+        Pattern pattern = Pattern.compile(regex);
 
         if (menuDTO == null){
             return null;
