@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 import { Menu } from 'src/app/interfaces/menu';
+import { MenuService } from 'src/app/services/menu.service';
 
 @Component({
   selector: 'app-create-item',
@@ -12,7 +13,7 @@ export class CreateItemComponent implements OnInit {
 
   createItemForm! : FormGroup;
   saveMenuObject : Menu = {} as Menu
-  constructor(private router : Router){
+  constructor(private router : Router, private menuService : MenuService){
 
   }
 
@@ -25,6 +26,7 @@ export class CreateItemComponent implements OnInit {
       itemDescription_ : new FormControl('',[Validators.required]),
       itemFromRestaurant_ : new FormControl('',[Validators.required]),
       itemPrice_ : new FormControl('',[Validators.required]),
+      nonVeg_ : new FormControl(''),
       itemType_ : new FormControl('',[Validators.required]),
       distance_ : new FormControl('',[Validators.required])
     })
@@ -33,7 +35,23 @@ export class CreateItemComponent implements OnInit {
 
 
   submitCreateItemForm(formData : any){
-    this.saveMenuObject.itemName = formData["itemName_"];
+    this.saveMenuObject.itemName = formData['itemName_'];
+    this.saveMenuObject.itemImage = formData['itemImage_'];
+    this.saveMenuObject.itemDescription = formData['itemDescription_'];
+    this.saveMenuObject.itemFromRestaurant = formData['itemFromRestaurant_'];
+    this.saveMenuObject.itemPrice = formData['itemPrice_'];
+    this.saveMenuObject.nonVeg = formData['nonVeg_'];
+    this.saveMenuObject.itemType = formData['itemType_'];
+    this.saveMenuObject.distance = formData['distance_'];
+
+
+    if(this.saveMenuObject !== null){
+        this.menuService.saveMenuSingleItem(this.saveMenuObject).subscribe((data)=>
+        {
+          console.log("Sending item to service"+JSON.stringify(this.saveMenuObject)+"Data" +data);
+          this.router.navigate(['menu/display'])
+        })
+    }
   }
   
 }

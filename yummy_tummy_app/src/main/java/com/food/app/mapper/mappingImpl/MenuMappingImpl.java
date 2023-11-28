@@ -5,9 +5,16 @@ import com.food.app.dto.MenuDTO;
 import com.food.app.mapper.MenuMapper;
 import org.springframework.stereotype.Component;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import static com.food.app.enums.StringConstants.filePath;
+import static com.food.app.enums.StringConstants.regex;
+
 @Component
 public class MenuMappingImpl implements MenuMapper {
 
+    Pattern pattern = Pattern.compile(regex);
 
     @Override
     public Menu toEntity(MenuDTO menuDTO) {
@@ -24,7 +31,16 @@ public class MenuMappingImpl implements MenuMapper {
         menu.setItemDescription(menuDTO.getItemDescription());
         menu.setDistance(menuDTO.getDistance());
         menu.setItemPrice(menuDTO.getItemPrice());
-        menu.setItemImage(menuDTO.getItemImage());
+        Matcher matcher = pattern.matcher(menuDTO.getItemImage());
+
+
+        // Find the matching part
+        if (matcher.find()) {
+            menu.setItemImage(filePath+matcher.group()); ; // Extracted filename
+            menu.setItemImage(menu.getItemImage().replace("//","/"));
+        } else {
+            System.out.println("File not found");
+        }
         menu.setItemFromRestaurant(menuDTO.getItemFromRestaurant());
 
         return menu;
