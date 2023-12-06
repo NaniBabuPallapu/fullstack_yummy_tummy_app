@@ -1,0 +1,29 @@
+<div class="order-item-search-items col-lg-12" *ngIf="itemObject">
+    <div class="item-card">
+        <div class="item-details">
+            <div class="item-title">
+
+                <div class="square">
+                    <div *ngIf="itemObject.nonVeg === true; else applyVeg">
+                        <div class="triangle"></div>
+                    </div>
+                    <ng-template #applyVeg>
+                        <div class="circle"></div>
+                    </ng-template>
+                </div>
+
+                {{itemObject.itemName ? itemObject.itemName : '-'}}
+            </div>
+
+            <div class="item-description">{{itemObject.itemDescription ? itemObject.itemDescription : '-'}}</div>
+            <div class="item-price" *ngIf="itemObject.itemPrice !== null && itemObject.itemPrice !== undefined">
+                {{itemObject.itemPrice | currency:'INR'}}</div>
+            <div class="item-restaurant">From : {{itemObject.itemFromRestaurant ? itemObject.itemFromRestaurant :
+                '-'}}</div>
+            <div class="item-type *ngIF!==null && itemObject.itemType!==undefined">Food Category : {{itemObject.itemType
+                | uppercase}}</div>
+            <div class="item-distance">Distance : {{itemObject.distance ? itemObject.distance : '-'}} away</div>
+        </div>
+        <img src="{{itemObject.itemImage}}" class="card-img-top" alt="Item Image">
+    </div>
+</div>

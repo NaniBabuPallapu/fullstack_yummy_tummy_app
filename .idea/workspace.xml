@@ -4,7 +4,223 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a98230a-de92-4117-934b-0557dc6d270c" name="Changes" comment="" />
+    <list default="true" id="6a98230a-de92-4117-934b-0557dc6d270c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fullstack_yummy_tummy_app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/.vscode/extensions.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/.vscode/tasks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/about/about.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/about/about.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/about/about.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/about/about.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/contact-us/contact-us.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/contact-us/contact-us.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/contact-us/contact-us.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/contact-us/contact-us.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/dashboard/dashboard.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/dashboard/dashboard.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/dashboard/dashboard.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/dashboard/dashboard.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/login/login.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/login/login.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/login/login.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/create-item/create-item.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/create-item/create-item.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/create-item/create-item.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu-display/menu-display.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu-display/menu-display.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu-display/menu-display.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu-item-list/menu-item-list.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu-item-list/menu-item-list.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu-item-list/menu-item-list.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/menu/menu.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/delete-order/delete-order.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/delete-order/delete-order.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/delete-order/delete-order.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/delete-order/delete-order.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-header/order-process-header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-header/order-process-header.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-header/order-process-header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-menu/order-item/order-item.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-menu/order-item/order-item.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-menu/order-item/order-item.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-menu/order-process-menu.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-menu/order-process-menu.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-menu/order-process-menu.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-payment/order-process-payment.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-payment/order-process-payment.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-payment/order-process-payment.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-review/order-process-review.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-review/order-process-review.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-review/order-process-review.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-shipping/order-process-shipping.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-shipping/order-process-shipping.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process-shipping/order-process-shipping.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-process/order-process.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-search-page/order-search-page.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-search-page/order-search-page.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order-search-page/order-search-page.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/order.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/search-order/search-order.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/search-order/search-order.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/order/search-order/search-order.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/settings/settings.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/settings/settings.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/settings/settings.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/settings/settings.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/create-profile/create-profile.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/create-profile/create-profile.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/create-profile/create-profile.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/delete-profile/delete-profile.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/delete-profile/delete-profile.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/delete-profile/delete-profile.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/display-profile/display-profile.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/display-profile/display-profile.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/display-profile/display-profile.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/update-profile/update-profile.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/update-profile/update-profile.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/update-profile/update-profile.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/components/users/user-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/constants/app.constants.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/content/loading.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/custom_pipes/captilize.pipe.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/custom_pipes/captilize.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/guards/auth.guard.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/interfaces/menu.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/interfaces/user.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/footer/footer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/footer/footer.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/footer/footer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/header/header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/header/header.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/header/header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/main/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/main/main.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/main/main.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/main/main.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/navbar-side/navbar-side.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/navbar-side/navbar-side.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/layouts/navbar-side/navbar-side.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/resolvers/user.resolver.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/services/auth.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/services/debug.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/services/menu.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/services/user.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/validators/password-validator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/app/validators/phone-number-validator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/bon-vivant-qom5MPOER-I-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/items-list/burger.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/items-list/chicken_biryani.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/items-list/french_fries.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/items-list/mutton_biryani.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/items-list/noodles.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/items-list/panner_butter_masala.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/items-list/pizza.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/items-list/shawarma.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/pexels-edward-eyer-687824.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/thomas-tucker-MNtag_eXMKw-unsplash.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/welcomevideo.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/assets/images/yummy_tummy_logo.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-yummy-tummy/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/DB_scripts/yummy_tummy.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/YummyTummyAppApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/domain/CardInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/domain/ContactInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/domain/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/domain/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/domain/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/domain/OrderItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/domain/OrderPayment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/domain/OrderShipping.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/domain/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/dto/CardInfoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/dto/ContactInfoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/dto/LocationDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/dto/MenuDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/dto/OrderDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/dto/OrderItemDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/dto/OrderPaymentDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/dto/OrderShippingDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/dto/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/enums/StringConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/mapper/MenuMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/mapper/mappingImpl/MenuMappingImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/repository/CardInfoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/repository/ContactInfoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/repository/LocationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/repository/MenuRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/repository/OrderItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/repository/OrderPaymentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/repository/OrderRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/repository/OrderShippingRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/resource/CardInfoResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/resource/ContactInfoResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/resource/LocationResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/resource/MenuResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/resource/OrderItemResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/resource/OrderPaymentResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/resource/OrderResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/resource/OrderShippingResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/resource/UserResource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/service/CardInfoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/service/ContactInfoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/service/LocationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/service/MenuService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/service/OrderItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/service/OrderPaymentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/service/OrderShippingService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/utils/ApiResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/utils/ResponseUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/main/resources/banner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yummy_tummy_app/src/test/java/com/food/app/YummyTummyAppApplicationTests.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +258,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
@@ -57,23 +274,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Personal Projects/my_project_practice/Java",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Personal Projects/yummy-tummy-app&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration name="Yummy-Tummy" type="Application" factoryName="Application">
+    <configuration name="YummyTummy" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="17" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.food.app.YummyTummyAppApplication" />
-      <module name="yummy_tummy_app" />
+      <module name="yummy-tummy-app" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +338,16 @@
           <url>file://$PROJECT_DIR$/yummy_tummy_app/src/main/java/com/food/app/mapper/mappingImpl/MenuMappingImpl.java</url>
           <line>38</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/food/app/mapper/mappingImpl/MenuMappingImpl.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/food/app/mapper/mappingImpl/MenuMappingImpl.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

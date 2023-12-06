@@ -1,0 +1,117 @@
+.order-item-search-items {
+    border: 1px solid #1e3659;
+    // border-bottom: 1px solid #EFEFEF;
+    height: 60%;
+    overflow: auto;
+    color: #1e3659;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // background-color: #fff !important;
+    display: flex;
+    align-items: center; /* Vertically center items */
+    letter-spacing: 1px;
+}
+
+.item-card {
+    display: flex;
+    justify-content: space-between; /* Space between the text and the image */
+    // align-items: center; /* Vertically center items */
+    width: 100%; /* Ensure the container takes full width */
+    overflow: auto;
+
+}
+
+.card-img-top {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+}
+
+.item-details {
+    flex: 1;
+    text-align: left; /* Align text to the left */
+    margin-right: 10%;
+
+}
+
+.square{
+    margin-top: 3px;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #1e3659;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.triangle {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #e74c3c; /* Triangle color */
+    margin-left: 2px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    margin-top: 1px;
+}
+
+.circle {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: green; /* Circle color */
+    margin-left: 2.5px;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    margin-top: 3px;
+}
+
+
+.item-title{
+
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: bolder;
+    display: flex;
+    
+}
+
+.item-description{
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.item-price{
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item-restaurant{
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.item-type{
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.item-distance{
+    padding-top: 20px;
+    font-size: 16px;
+    padding-bottom: 20px;
+
+}
