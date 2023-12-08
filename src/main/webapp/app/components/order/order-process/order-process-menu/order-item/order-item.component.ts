@@ -61,7 +61,7 @@ export class OrderItemComponent implements OnInit {
   private emitOrderItemUpdate(){
     const selectedQuantity = this.orderItemFormGroup.get('quantity')!.value;
     this.addToOrder.emit({itemObject :this.itemObject, quantity : selectedQuantity});
-    console.log("updated OrderItem Quantites OrderItem : {}, Quantity : {} ",this.itemObject, selectedQuantity);
+    // console.log("updated OrderItem Quantites OrderItem : {}, Quantity : {} ",this.itemObject, selectedQuantity);
   }
 
 }
