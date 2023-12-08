@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { Route, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Menu } from 'src/main/webapp/app/interfaces/menu';
 import { MenuService } from 'src/main/webapp/app/services/menu.service';
 

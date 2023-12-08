@@ -1,5 +1,7 @@
 package com.food.app.domain;
 
+import org.hibernate.annotations.ColumnDefault;
+
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.math.BigDecimal;
@@ -20,7 +22,7 @@ public class OrderItem {
     @Column(name="item_img")
     private String itemImage;
 
-    @Column(name = "non_veg")
+    @Column(name = "non_veg" , columnDefinition = "TINYINT(1) DEFAULT 0")
     private Boolean nonVeg;
 
     @Size(max = 255)
@@ -44,8 +46,11 @@ public class OrderItem {
     @Column(name = "distance_at")
     private String distance;
 
-    @Column(name="quantity")
+    @Column(name = "quantity")
     private Integer quantity;
+
+    @Column(name = "is_selected")
+    private Boolean isSelected;
 
     @ManyToOne
     @JoinColumn(name = "order_id")

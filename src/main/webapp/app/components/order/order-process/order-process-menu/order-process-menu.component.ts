@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { Menu } from 'src/main/webapp/app/interfaces/menu';
+import { OrderItem } from 'src/main/webapp/app/interfaces/order-item';
 import { MenuService } from 'src/main/webapp/app/services/menu.service';
 
 @Component({
@@ -10,8 +12,10 @@ import { MenuService } from 'src/main/webapp/app/services/menu.service';
 export class OrderProcessMenuComponent implements OnInit {
 
   menuItemListObj! : Menu[];
+  orderItemListObj : OrderItem[] = [];
+  orderFormGroup! : FormGroup;
 
-  constructor(private menuService:MenuService){
+  constructor(private menuService:MenuService, private formBuilder : FormBuilder){
 
   }
   ngOnInit(){
@@ -23,10 +27,12 @@ export class OrderProcessMenuComponent implements OnInit {
   getMenuItemList(){
     this.menuService.getMenuItems().subscribe((data) => {
       this.menuItemListObj = data;
-      console.log("printing menu data on console : "+JSON.stringify(this.menuItemListObj));
+      this.orderItemListObj = JSON.parse(JSON.stringify(this.menuItemListObj));
+      console.log("printing orderItemListObj data on console : "+JSON.stringify(this.orderItemListObj));
+      console.log("printing menuItemListObj data on console : "+JSON.stringify(this.menuItemListObj));
     })
-  }
 
+  }
   
 
 }

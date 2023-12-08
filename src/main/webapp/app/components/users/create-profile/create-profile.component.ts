@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { User } from 'src/main/webapp/app/interfaces/user';
 import { AuthService } from 'src/main/webapp/app/services/auth.service';
 import { DebugService } from 'src/main/webapp/app/services/debug.service';

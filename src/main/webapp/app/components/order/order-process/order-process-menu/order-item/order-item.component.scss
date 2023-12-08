@@ -6,8 +6,8 @@
     color: #1e3659;
     margin-left: 5px;
     margin-right: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     // background-color: #fff !important;
     display: flex;
     align-items: center; /* Vertically center items */
@@ -23,15 +23,7 @@
 
 }
 
-.card-img-top {
-    max-width: 250px;
-    max-height: 250px;
-    border-radius: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
 
-}
 
 .item-details {
     flex: 1;
@@ -89,29 +81,86 @@
 }
 
 .item-description{
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 15px;
 }
 
 .item-price{
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 16px;
     font-weight: bold;
 }
 
 .item-restaurant{
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 14px;
 }
 
 .item-type{
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 14px;
 }
 
 .item-distance{
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 16px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 
+}
+
+
+.card-img-top {
+    border: 1px solid lightgray;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    position: relative; /* Add relative positioning to the container */
+}
+
+.item-quantity {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0; /* Position the item-quantity at the bottom */
+    padding: 10px 20px;
+    height: 40px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    // border: 1px solid black;
+    background-color: #fff; /* Background color for item-quantity */
+    right: 1px;
+    margin-right: 95px;
+}
+
+.item-quantity button {
+    color: green;
+    background-color: #fff;
+    font-weight: bolder;
+    border: none;
+}
+
+.minus {
+    margin-right: 10px;
+    font-size: 28px;
+}
+
+.plus {
+    margin-left: 10px;
+    font-size: 28px;
+}
+
+.quantity-value {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.item-quantity button.add-item{
+    font-size: 16;
+    width: 80px;
 }
