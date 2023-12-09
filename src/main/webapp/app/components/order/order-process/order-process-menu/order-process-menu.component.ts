@@ -14,7 +14,7 @@ export class OrderProcessMenuComponent implements OnInit {
   menuItemListObj! : Menu[];
   fetchedOrderItemListObj : OrderItem[] = [];
 
-  addedOrderItemList : OrderItem[] = [];
+  addedOrderItemsList : OrderItem[] = [];
 
   constructor(private menuService:MenuService){
 
@@ -35,29 +35,31 @@ export class OrderProcessMenuComponent implements OnInit {
 
   }
 
-  addItemsToOrder(event: {itemObject: OrderItem, quantity: number}){
-      console.log("printing OrderItem data on console with quantity  : "+JSON.stringify(event.itemObject) +" selected quantity "+JSON.stringify(event.quantity) );
 
-      const existingItemIndex  =  this.addedOrderItemList.findIndex((item) => item.itemName === event.itemObject.itemName);
-      console.log(" existingItemIndex "+existingItemIndex);
+  addingFetchedItemsToOrder(event : {itemObject : OrderItem, quantity : number}){
+    
+   const existingItemIndex =  this.addedOrderItemsList.findIndex((item) => item.itemName === event.itemObject.itemName);
 
-        // If the item already exists in the orderItemListObj array
-      if(existingItemIndex !== -1){
-        // Increment the quantity of the existing item
-        this.addedOrderItemList[existingItemIndex].quantity =  event.quantity;
+  // If the item already exists in the addedOrderItemsList array
+   if(existingItemIndex !== -1){
 
-      } else{
-        // If the item is not in the orderItemListObj array, create a new item
-        const newItem = {...event.itemObject, quantity:event.quantity};
+    // Increment the quantity of the existing item
+    this.addedOrderItemsList[existingItemIndex].quantity = event.quantity;
+    console.log("updated item-quantity for existing item  Existing OrderItem : {}",JSON.stringify(this.addedOrderItemsList[existingItemIndex]));
+   } else{
 
-        // Add the new item to the orderItemListObj array
-        this.addedOrderItemList.push(newItem);
+    // If the item is not in the addedOrderItemsList array, create a new item
+    const newItem = {... event.itemObject , quantity : event.quantity};
 
-      }
+    // Add the new item to the addedOrderItemsList array
+    this.addedOrderItemsList.push(newItem);
+    console.log(" pushing new item  into ListOfOrderItem New OrderItem: {}",JSON.stringify(newItem));
 
-      console.log('Updated Order Items:', JSON.stringify(this.addedOrderItemList));
+   }
+
+   console.log("total items that are added to order addedOrderItemsList: {}",JSON.stringify(this.addedOrderItemsList));
 
   }
-  
+ 
 
 }

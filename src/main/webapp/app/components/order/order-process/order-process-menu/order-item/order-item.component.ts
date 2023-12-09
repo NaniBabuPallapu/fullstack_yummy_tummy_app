@@ -13,55 +13,56 @@ export class OrderItemComponent implements OnInit {
   @Input() itemObject! : OrderItem;
   orderItemFormGroup! : FormGroup;
 
-  @Output() addToOrder : EventEmitter<{itemObject : OrderItem, quantity : number}> = new EventEmitter();
+  @Output() addSelectedItemToOrder : EventEmitter<{itemObject : OrderItem, quantity : number}> = new EventEmitter();
+
 
   constructor(private formBuilder : FormBuilder){
 
   }
 
   ngOnInit(){
+
     this.orderItemFormGroup = this.formBuilder.group({
-
-      quantity : 0,
-
+      quantity : 0
     });
-
 
   }
 
- 
+  startAddingItemsToOrder(){
+    this.incrementQuantity();
+    this.addItemToOrder();
 
+  }
+
+  
   incrementQuantity(){
 
-    const currentQuantity = this.orderItemFormGroup.get('quantity')!.value; 
+    const currentQuantity = this.orderItemFormGroup.get('quantity')!.value;
     this.orderItemFormGroup.patchValue({
       quantity : currentQuantity+1
     });
 
-    this.emitOrderItemUpdate();
+    this.addItemToOrder();
+
   }
 
   decrementQuantity(){
+
     const currentQuantity = this.orderItemFormGroup.get('quantity')!.value;
     if(currentQuantity > 0){
-      this.orderItemFormGroup.patchValue({ 
+      this.orderItemFormGroup.patchValue({
         quantity : currentQuantity-1
       });
-
-      this.emitOrderItemUpdate();
     }
+
+    this.addItemToOrder();
+
   }
 
-
-  addItemToOrder(){
-    this.incrementQuantity();
-    this.emitOrderItemUpdate();
-  }
-
-  private emitOrderItemUpdate(){
-    const selectedQuantity = this.orderItemFormGroup.get('quantity')!.value;
-    this.addToOrder.emit({itemObject :this.itemObject, quantity : selectedQuantity});
-    // console.log("updated OrderItem Quantites OrderItem : {}, Quantity : {} ",this.itemObject, selectedQuantity);
-  }
+private addItemToOrder(){
+  const currentQuantity = this.orderItemFormGroup.get('quantity')!.value;
+  this.addSelectedItemToOrder.emit({itemObject: this.itemObject, quantity : currentQuantity});
+  console.log("adding selected item and quantity to Order  OrderItem : {}, quantity : {} ", JSON.stringify(this.itemObject), currentQuantity);
+}
 
 }

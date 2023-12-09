@@ -28,7 +28,7 @@
         <img src="{{itemObject.itemImage}}" class="card-img-top" alt="Item Image">
 
         <div class="item-quantity">
-            <button class="add-item" *ngIf="orderItemFormGroup.get('quantity')?.value === 0; else increaseItem" (click)="addItemToOrder()">ADD</button>
+            <button class="add-item" *ngIf="orderItemFormGroup.get('quantity')?.value === 0 ; else increaseItem" (click) ="startAddingItemsToOrder()">ADD</button>
             <ng-template #increaseItem>
                 <!-- Buttons to decrement and increment  quantity -->
                 <button class="minus" type="button" (click)="decrementQuantity()">-</button>

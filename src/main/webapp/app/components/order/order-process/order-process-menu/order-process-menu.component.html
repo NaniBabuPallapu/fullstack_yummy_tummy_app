@@ -3,7 +3,12 @@
 
     <div class="custom-menu-item" *ngIf="fetchedOrderItemListObj && fetchedOrderItemListObj.length > 0">
         <div *ngFor="let orderItemObj of fetchedOrderItemListObj; index as i">
-            <app-order-item [itemObject]="orderItemObj" (addToOrder)="addItemsToOrder($event)"></app-order-item>
+            <app-order-item [itemObject]="orderItemObj" (addSelectedItemToOrder)="addingFetchedItemsToOrder($event)"></app-order-item>
         </div>
     </div>
+</div>
+<div class="button-container">
+        <button class="cancel-button" type="button">CANCEL</button>
+        <span>{{2}} items added to order</span>
+        <button class="save-button" type="button">SAVE</button>
 </div>

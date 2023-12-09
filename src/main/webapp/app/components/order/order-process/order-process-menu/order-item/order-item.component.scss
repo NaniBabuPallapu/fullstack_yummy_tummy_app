@@ -1,7 +1,7 @@
 .order-item-search-items {
     border: 1px solid #1e3659;
     // border-bottom: 1px solid #EFEFEF;
-    height: 60%;
+    height: 40%;
     overflow: auto;
     color: #1e3659;
     margin-left: 5px;
@@ -12,6 +12,10 @@
     display: flex;
     align-items: center; /* Vertically center items */
     letter-spacing: 1px;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+
 }
 
 .item-card {
@@ -20,6 +24,7 @@
     // align-items: center; /* Vertically center items */
     width: 100%; /* Ensure the container takes full width */
     overflow: auto;
+    height: 30%;
 
 }
 
@@ -72,7 +77,7 @@
 
 .item-title{
 
-    margin-top: 30px;
+    margin-top: 10px;
     text-transform: capitalize;
     font-size: 16px;
     font-weight: bolder;
@@ -81,28 +86,28 @@
 }
 
 .item-description{
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: 15px;
 }
 
 .item-price{
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: 16px;
     font-weight: bold;
 }
 
 .item-restaurant{
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: 14px;
 }
 
 .item-type{
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: 14px;
 }
 
 .item-distance{
-    padding-top: 10px;
+    padding-top: 5px;
     font-size: 16px;
     padding-bottom: 10px;
 
@@ -111,8 +116,8 @@
 
 .card-img-top {
     border: 1px solid lightgray;
-    max-width: 250px;
-    max-height: 250px;
+    max-width: 150px;
+    max-height: 150px;
     border-radius: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -126,15 +131,15 @@
     justify-content: space-between;
     position: absolute;
     bottom: 0; /* Position the item-quantity at the bottom */
-    padding: 10px 20px;
-    height: 40px;
+    padding: 5px 10px;
+    height: 30px;
     margin-bottom: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     // border: 1px solid black;
     background-color: #fff; /* Background color for item-quantity */
     right: 1px;
-    margin-right: 95px;
+    margin-right: 60px;
 }
 
 .item-quantity button {
