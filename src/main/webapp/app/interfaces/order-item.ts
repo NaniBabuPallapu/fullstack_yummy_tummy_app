@@ -10,6 +10,5 @@ export interface OrderItem{
     distance : string,
     isItemAvailable : boolean,
     quantity : number,
-    isSelected : boolean
 
 }

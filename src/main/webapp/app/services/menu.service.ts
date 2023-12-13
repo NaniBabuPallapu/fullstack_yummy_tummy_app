@@ -29,8 +29,8 @@ export class MenuService {
    saveMenuSingleItem(menu : Menu) : Observable<Menu>{
     return this.httpClient.post<Menu>(`${this.menuBaseUrl}/save-item`, menu).pipe(
       catchError((error) => {
-        console.error("Error while sending product to API ");
-        return throwError("Exception Occured while sending menu item to API");
+        console.error("Error while sending product to API "+error);
+        return throwError("Exception Occured while sending menu item to API"+error);
       })
     )
    }
