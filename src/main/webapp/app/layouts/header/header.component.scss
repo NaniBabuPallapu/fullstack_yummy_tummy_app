@@ -1,0 +1,113 @@
+
+nav{
+    height: 100%;
+    color: #1e3659;
+}
+
+.fa-solid{
+    color: #1e3659;
+}
+
+
+.side-nav-button{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.5rem;
+ cursor: pointer;
+}
+.side-nav-button:hover{
+    color: #1e3659;
+    background-color: lightgray;
+    border-radius: 30%;
+}
+// .side-nav-button i:hover{
+//     color: #1e3659;
+//     background-color: lightgray;
+// }
+
+.custom-bg-color {
+    // background-color: #ff5733; /* Custom header background color (e.g., orange) */
+    background-color: #FFFFF0; /* Footer background color (dark gray) */ //FE6F2F
+    color: #1e3659;
+}
+
+/* CSS to reduce the image size and control its appearance within the header */
+img{
+    width: 300px;
+    cursor: pointer;
+    margin: 7px 0;
+    padding-bottom: 70px;
+    padding-top: 70px;
+
+}
+nav-link{
+    color: #1e3659;
+}
+
+.custom-dropdown-menu{
+    background-color: #FFFFF0; /* Footer background color (dark gray) */ //FE6F2F
+    border-radius: 5px; /* Add rounded corners */
+    border: 1px solid #1e3659;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+.dropdown-item{
+    color: #1e3659;
+
+}
+
+.dropdown-item:hover{
+    // background-color: rgba(255, 255, 255, 0.3);
+    background-color:lightgray;
+    color: #1e3659;
+
+}
+.fa-user{
+    font-size: 1.5rem;
+
+}
+.fa-user:hover{
+    color: #1e3659;
+    background-color: lightgray;
+}
+.active{
+    background-color: gray;
+    color: #1e3659;
+}
+
+.dropdown-toggle{
+    border: 1px solid #1e3659;
+    color: #1e3659;
+}
+
+.dropdown-toggle:hover{
+    background-color: lightgray;
+}
+
+.btn-outline-light{
+    border: 1px solid #1e3659;
+    color: #1e3659;
+}
+
+.btn-outline-light:hover{
+    background-color: lightgray;
+}
+
+.form-control{
+    border: 1px solid #1e3659;
+}
+
+.logo-design {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    // text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow properties */
+    text-shadow: 2px 1px 2px lightgreen;
+    color: #333;
+  }
+  .smile-icon {
+    color: #1e3659; /* Yellow color for smile */
+
+  }

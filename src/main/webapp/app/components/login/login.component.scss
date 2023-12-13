@@ -1,0 +1,166 @@
+.create-profile{
+    // background-color: #1e3659;
+	background: linear-gradient(#000,rgb(226, 239, 239),hsl(0, 0%, 0%));
+    // animation: animate 5s linear infinite;
+
+    // background-image: url('/assets/images/bon-vivant-qom5MPOER-I-unsplash.jpg');
+
+    background-image: url('~src/main/webapp/assets/images/pexels-edward-eyer-687824.jpg');
+    
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Scale the image to cover the entire element */
+    background-position: center center; /* Center the image both horizontally and vertically */
+    background-attachment: fixed; /* Fix the background image in place */
+    background-color: #fff; 
+
+    // color: #1e3659;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    font-weight: bold;
+    font-family: HelveticaNeueLTStd-Bd;
+    font-size: 14px;
+
+}
+
+h4{
+    font-family: HelveticaNeueLTStd-Bd;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.create-profile-css {
+    // background-color: #FFFFF0;
+    // color: #1e3659;
+    color: #1e3659;
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    font-weight: bold;
+    margin: 25%;
+    padding: 30px;
+
+}
+
+.create-profile .fa-user {
+    margin-right: 20px;
+}
+
+.form-group {
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    /* Add padding to form-group */
+    width: 400px;
+    /* Adjust the width to your preference */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control {
+    width: 250px;
+    /* Adjust the width to your preference */
+    padding: 10px;
+    margin-left: 10px;
+    /* Add space between label and input */
+}
+
+.form-group .check-css label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+    /* Add space between label and input */
+}
+
+.form-group .check-css input {
+    flex: 2;
+    margin-left: 10px;
+}
+
+.create-profile-css .form-group .btn-primary {
+
+    width: 100%;
+    /* Make the button as wide as the form-group */
+    background-color: #1e3659;
+    color: #EFEFEF;
+    font-weight: bold;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.error-message {
+    color: #EFEFEF;
+    display: inline-flex;
+    text-align: left;
+    margin-left: 140px;
+    /* Adjust this margin to control the distance from the input field */
+    flex: 1;
+    width: auto;
+    /* Allow the error message to adjust its width based on content */
+    white-space: nowrap;
+    /* Prevent the error message from wrapping to the next line */
+    overflow: hidden;
+    /* Hide any overflow content */
+    text-overflow: ellipsis;
+    /* Add an ellipsis (...) for overflow */
+    // padding: 5px;
+    // margin-bottom: 3px;
+}
+
+.signup-checkout {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    color:darkgray;
+
+    /* Center vertically */
+}
+
+.forgot-checkout {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    color:#FE6F2F;
+    /* Center vertically */
+}
+
+
+.spacer {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+button {
+    border: none;
+    color: inherit;
+    background-color: #EFEFEF;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #1e3659;
+    /* Inherit the color from the parent element */
+}
+
+.signup-account{
+    padding-top: 10px;
+    color:#FE6F2F;
+
+}

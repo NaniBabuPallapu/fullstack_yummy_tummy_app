@@ -1,0 +1,41 @@
+<div class="order-item-search-items col-lg-12" *ngIf="itemObject">
+    <div class="item-card">
+        <div class="item-details">
+            <div class="item-title">
+
+                <div class="square">
+                    <div *ngIf="itemObject.nonVeg === true; else applyVeg">
+                        <div class="triangle"></div>
+                    </div>
+                    <ng-template #applyVeg>
+                        <div class="circle"></div>
+                    </ng-template>
+                </div>
+
+                {{itemObject.itemName ? itemObject.itemName : '-'}}
+            </div>
+
+            <div class="item-description">{{itemObject.itemDescription ? itemObject.itemDescription : '-'}}</div>
+            <div class="item-price" *ngIf="itemObject.itemPrice !== null && itemObject.itemPrice !== undefined">
+                {{itemObject.itemPrice | currency:'INR'}}</div>
+            <div class="item-restaurant">From : {{itemObject.itemFromRestaurant ? itemObject.itemFromRestaurant :
+                '-'}}</div>
+            <div class="item-type *ngIF!==null && itemObject.itemType!==undefined">Food Category : {{itemObject.itemType
+                | uppercase}}</div>
+            <div class="item-distance">Distance : {{itemObject.distance ? itemObject.distance : '-'}} away</div>
+
+        </div>
+        <img src="{{itemObject.itemImage}}" class="card-img-top" alt="Item Image">
+
+        <div class="item-quantity">
+            <button class="add-item" *ngIf="orderItemFormGroup.get('quantity')?.value === 0 ; else increaseItem" (click) ="startAddingItemsToOrder()">ADD</button>
+            <ng-template #increaseItem>
+                <!-- Buttons to decrement and increment  quantity -->
+                <button class="minus" type="button" (click)="decrementQuantity()">-</button>
+                <span class="quantity-value">{{orderItemFormGroup.get('quantity')?.value}}</span>                 <!-- it will show current item quantity-->
+                <button class="plus" type="button" (click)="incrementQuantity()">+</button>
+            </ng-template>
+        </div>
+
+    </div>
+</div>
