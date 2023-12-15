@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a98230a-de92-4117-934b-0557dc6d270c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/food/app/mapper/OrderItemMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/food/app/mapper/mappingImpl/OrderItemMappingImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yummy_tummy_app/yummy_tummy_app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/food/app/domain/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/app/domain/OrderItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/food/app/dto/OrderDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/app/dto/OrderDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/food/app/dto/OrderItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/app/dto/OrderItemDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/food/app/resource/OrderItemResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/app/resource/OrderItemResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/food/app/service/OrderItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/app/service/OrderItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-menu/order-process-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-menu/order-process-menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-menu/order-process-menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-menu/order-process-menu.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/constants/app.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/constants/app.constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/interfaces/order-item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/interfaces/order-item.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/services/menu.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/services/menu.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/food/app/domain/OrderItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/food/app/domain/OrderItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/food/app/dto/OrderDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/food/app/dto/OrderDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/food/app/dto/OrderItemDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/food/app/dto/OrderItemDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/food/app/resource/OrderItemResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/food/app/resource/OrderItemResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/food/app/service/OrderItemService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/food/app/service/OrderItemService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
