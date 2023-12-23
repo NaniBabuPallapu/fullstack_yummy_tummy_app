@@ -43,6 +43,8 @@ export class OrderProcessMenuComponent implements OnInit {
   addingFetchedItemsToOrder(event: { itemObject: OrderItem, quantity: number }) {
 
 
+    this.countingItems();
+
     const existingItemIndex = this.addedOrderItemsList.findIndex((item) => item.itemName === event.itemObject.itemName);
 
     // If the item already exists in the addedOrderItemsList array

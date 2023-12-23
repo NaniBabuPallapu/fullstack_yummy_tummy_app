@@ -1,5 +1,5 @@
 <div class="col-lg-12 center-container custom-center-container">
-    <div class="title mb-2" [ngStyle]="{'padding-top' : '1px'}">ITEMS</div>
+    <div class="title mb-2" [ngStyle]="{'padding-top' : '1px'}">AVAILABLE ITEMS IN YOUR LOCATION</div>
 
     <div class="custom-menu-item" *ngIf="fetchedOrderItemListObj && fetchedOrderItemListObj.length > 0">
         <div *ngFor="let orderItemObj of fetchedOrderItemListObj; index as i">

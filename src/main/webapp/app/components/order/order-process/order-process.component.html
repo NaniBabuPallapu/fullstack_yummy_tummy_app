@@ -10,18 +10,18 @@
 
     <mat-horizontal-stepper>
 
-        <mat-step label="menu">
-            <ng-template matStepLabel>MENU</ng-template>
-            <ng-container>
-                <app-order-process-menu></app-order-process-menu>
-            </ng-container>
-        </mat-step>
-
         <mat-step label="shipping">
             <ng-template matStepLabel>SHIPPING</ng-template>
             <ng-container>
                 <!-- Content for the Shipping step -->
                 <app-order-process-shipping></app-order-process-shipping>
+            </ng-container>
+        </mat-step>
+
+        <mat-step label="menu">
+            <ng-template matStepLabel>MENU</ng-template>
+            <ng-container>
+                <app-order-process-menu></app-order-process-menu>
             </ng-container>
         </mat-step>
 
@@ -49,8 +49,10 @@
 </div>
 <div class="button-container">
     <div class="align-items-right">
-        <button mat-button *ngIf="stepper && stepper.selectedIndex > 0" (click)="stepper.previous()" >BACK</button>
-        <button mat-button *ngIf="stepper && stepper.selectedIndex < stepper.steps.length - 1" (click)="stepper.next()" >NEXT</button>
-        <button mat-button *ngIf="stepper && stepper.selectedIndex === stepper.steps.length - 1" type="submit">SUBMIT</button>    
+        <button mat-button *ngIf="stepper && stepper.selectedIndex > 0" (click)="stepper.previous()">BACK</button>
+        <button mat-button *ngIf="stepper && stepper.selectedIndex < stepper.steps.length - 1"
+            (click)="stepper.next()">NEXT</button>
+        <button mat-button *ngIf="stepper && stepper.selectedIndex === stepper.steps.length - 1"
+            type="submit">SUBMIT</button>
     </div>
 </div>
