@@ -12,6 +12,8 @@ import { OrderProcessComponent } from './order-process.component';
 import { MatStepperModule} from '@angular/material/stepper';
 import { MatMenuModule} from '@angular/material/menu';
 import { OrderItemComponent } from './order-process-menu/order-item/order-item.component';
+import { OrderShippingComponent } from './order-process-shipping/order-shipping/order-shipping.component';
+import { OrderContactInfoComponent } from './order-process-shipping/order-contact-info/order-contact-info.component';
 
 
 
@@ -23,7 +25,9 @@ import { OrderItemComponent } from './order-process-menu/order-item/order-item.c
       OrderProcessPaymentComponent,
       OrderProcessReviewComponent,
       OrderProcessShippingComponent,
-      OrderItemComponent
+      OrderItemComponent,
+      OrderShippingComponent,
+      OrderContactInfoComponent
       
   ],
   imports: [

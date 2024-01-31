@@ -5,14 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a98230a-de92-4117-934b-0557dc6d270c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/food/app/mapper/LocationMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/food/app/mapper/mappingImpl/LocationMappingImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/interfaces/location.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/services/location.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/app/services/order-process-shipping.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-menu/order-process-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-menu/order-process-menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-menu/order-process-menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-menu/order-process-menu.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/food/app/domain/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/app/domain/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/food/app/dto/LocationDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/app/dto/LocationDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/food/app/resource/LocationResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/app/resource/LocationResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/food/app/service/LocationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/food/app/service/LocationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-shipping/order-process-shipping.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-shipping/order-process-shipping.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-shipping/order-process-shipping.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-shipping/order-process-shipping.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-shipping/order-process-shipping.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process-shipping/order-process-shipping.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/components/order/order-process/order-process.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/app/constants/app.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/app/constants/app.constants.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/food/app/domain/Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/food/app/domain/Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/food/app/dto/LocationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/food/app/dto/LocationDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/food/app/resource/LocationResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/food/app/resource/LocationResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/food/app/service/LocationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/food/app/service/LocationService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,6 +175,21 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/food/app/service/OrderItemService.java</url>
           <line>40</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/food/app/service/LocationService.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/food/app/resource/LocationResource.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/food/app/mapper/mappingImpl/LocationMappingImpl.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
