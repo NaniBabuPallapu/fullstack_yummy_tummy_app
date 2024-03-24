@@ -1,0 +1,22 @@
+<!-- <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 user-profile">
+            <div class="user-details">
+                <p class="font-weight-bold">First Name: <span >{{ singleUser.firstName }}</span></p>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- <body> -->
+    <div class="user-profile" *ngIf="singleUser !== null">
+        <h4><i class="fa-solid fa-user"></i>Your Profile</h4>
+        <div class="user-details">
+            <p class="font-weight-bold">First Name: <span >{{singleUser.firstName}}</span></p>
+            <p class="font-weight-bold">Last Name: <span >{{singleUser.lastName}}</span></p>
+            <p class="font-weight-bold">Login Name: <span >{{singleUser.loginName}}</span></p>
+            <p class="font-weight-bold">Email: <span >{{singleUser.email}}</span></p>
+            <p class="font-weight-bold">Phone: <span >{{singleUser.phone}}</span></p>
+        </div>
+    </div>
+<!-- </body> -->

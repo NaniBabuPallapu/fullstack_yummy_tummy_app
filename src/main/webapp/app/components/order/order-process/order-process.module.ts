@@ -14,6 +14,10 @@ import { MatMenuModule} from '@angular/material/menu';
 import { OrderItemComponent } from './order-process-menu/order-item/order-item.component';
 import { OrderShippingComponent } from './order-process-shipping/order-shipping/order-shipping.component';
 import { OrderContactInfoComponent } from './order-process-shipping/order-contact-info/order-contact-info.component';
+import { YummyTummyWalletComponent } from './order-process-payment/yummy-tummy-wallet/yummy-tummy-wallet.component';
+import { UpiComponent } from './order-process-payment/upi/upi.component';
+import { CardsComponent } from './order-process-payment/cards/cards.component';
+import { CodComponent } from './order-process-payment/cod/cod.component';
 
 
 
@@ -27,7 +31,11 @@ import { OrderContactInfoComponent } from './order-process-shipping/order-contac
       OrderProcessShippingComponent,
       OrderItemComponent,
       OrderShippingComponent,
-      OrderContactInfoComponent
+      OrderContactInfoComponent,
+      YummyTummyWalletComponent,
+      UpiComponent,
+      CardsComponent,
+      CodComponent
       
   ],
   imports: [

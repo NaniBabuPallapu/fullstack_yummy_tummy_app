@@ -1,0 +1,53 @@
+<div class="create-item col-lg-12">
+    <div class="custom-item">
+        <!-- <h4>Add New Item Into Menu</h4> -->
+        <h4>Create New Item</h4>
+        <form [formGroup]="createItemForm" class="main-form" (ngSubmit)="submitCreateItemForm(createItemForm.value)" novalidate>
+            <div class="form-group">
+                <label for="name" class="form-label">Item Name : </label>
+                <input type="text" class="form-control" formControlName="itemName_" id="name">
+            </div>
+            <div class="form-group">
+                <label for="img" class="form-label">Item Image : </label>
+                <input type="file" class="form-control" formControlName="itemImage_" id="img">
+            </div>
+            <div class="form-group">
+                <label for="description" class="form-label">Item Description : </label>
+                <input type="text" class="form-control" formControlName="itemDescription_" id="description">
+            </div>
+
+            <div class="form-group">
+                <label for="restaurant" class="form-label">From Restaurant : </label>
+                <input type="text" class="form-control" formControlName="itemFromRestaurant_" id="restaurant">
+            </div>
+
+            <div class="form-group">
+                <label for="price" class="form-label">Item Price : </label>
+                <input type="number" class="form-control" formControlName="itemPrice_" id="price">
+            </div>
+                <input type="checkbox"  class="form-checkbox" formControlName="nonVeg_" id="nonVeg">Non-Veg
+                <small [ngStyle]="{'font-weight':'bold'}">(select this checkbox if the item is non-veg)</small>
+            <div class="form-group">
+                <label for="type" class="form-label">Select Item Type : </label>
+                <select id="type" class="form-control" name="food" formControlName="itemType_">
+                    <option value="breakfast">BreakFast</option>
+                    <option value="starters">Starters</option>
+                    <option value="brunch">Brunch</option>
+                    <option value="soups">Soups</option>
+                    <option value="main course">Main Course</option>
+                    <option value="juices">Juices</option>
+                    <option value="ice creams">Ice Creams</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="distance" class="form-label">Distance : </label>
+                <input type="text" class="form-control" formControlName="distance_" id="distance">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" [disabled]="!createItemForm.valid">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>

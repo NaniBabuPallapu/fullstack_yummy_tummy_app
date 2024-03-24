@@ -1,0 +1,52 @@
+<div class="create-profile" *ngIf="signIn || signInUserBack; else userSignUp">
+    <div class="create-profile-css">
+    <h4><i class="fa-solid fa-user"></i>Sign In</h4>
+    <!-- novalidate : novalidate is applied to the <form> element. It disables the browser's default form validation and 
+                    relies on Angular's reactive form validation defined in the logInForm FormGroup -->
+    <form [formGroup]="logInForm" (ngSubmit)="logIn(logInForm.value)" class="form-css" novalidate>
+        <div class="form-group">
+            <label for="login-name" class="check-css">Login Name :</label>
+            <input type="text" id="login-name" class="form-control" placeholder="enter login name"
+                formControlName="logInName_">
+            <div class="validation-message"
+                *ngIf="!logInNameValue?.valid  && (logInNameValue?.dirty && logInNameValue?.touched)">
+                <small class="error-message" [hidden]="!logInNameValue?.errors?.['required']">* login name is
+                    required</small>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="password" class="check-css">Password :</label>
+            <input type="password" id="password" class="form-control" placeholder="enter password"
+                formControlName="password_">
+            <div class="validation-message"
+                *ngIf="!passwordValue?.valid  && (passwordValue?.dirty && passwordValue?.touched)">
+                <small class="error-message" [hidden]="!passwordValue?.errors?.['required']">* password is
+                    required</small>
+                <small class="error-message" [hidden]="!passwordValue?.errors?.['PasswrodValidator']">* password should
+                    be between 4 and 15 characters</small>
+            </div>
+        </div>
+
+        <div class="forgot-checkout">
+            <!-- <button class="forgot-password" routerLink="/forgot-password">Forgot Password?</button> -->
+            <button class="forgot-password">Forgot Password?</button>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" [disabled]="!logInForm.valid">Login</button>
+        </div>
+        <div class="signup-checkout">Don't have an account?
+            <button class="signup-account" type="button" (click)="createProfile()" [disabled]="buttonDisabled">Sign Up</button>
+        </div>
+        <div *ngIf="logInFailed">
+            Invalid Credentails. Please try again!
+        </div>
+    </form>
+</div>
+</div>
+<!-- (singInBack) event emitter is an @Output decorator from create-profile.ts file and assign this value to signInUserBack property in login.ts file-->
+<!-- signUp is a property and assign this value to [createProfile] @Input decorator login.ts file -->
+
+<ng-template #userSignUp>
+    <app-create-profile (singInBack)="signInUserBack=$event" [createProfile]="signUp"></app-create-profile>
+</ng-template>

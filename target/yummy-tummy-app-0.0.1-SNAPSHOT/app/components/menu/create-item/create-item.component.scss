@@ -1,0 +1,93 @@
+.create-item {
+    background-color: #FFFFF0;
+    // border: 1px solid #1e3659;
+    top: 1;
+    position: fixed;
+    height: 100vh; /* Fill the entire height of the column */
+    width: 100%;
+    overflow: auto; /* Enable scrolling if content exceeds the height */
+    color: #1e3659;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: HelveticaNeueLTStd-Bd;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5); /* Adjust the scale factor based on your preference */
+    margin-right: 10px; /* Optional: Add some spacing between the checkbox and the label */
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+h4{
+    font-family: HelveticaNeueLTStd-Bd;
+    font-size:18px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+.main-form{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.custom-item{
+    background-color: #FFFFF0;
+    // border: 1px solid #1e3659;
+    margin-top: 3%;
+    margin-left: 35%;
+    margin-right: 40%;
+    width: 40%;
+    position: fixed;
+    height: 80vh; /* Fill the entire height of the column */
+    overflow: auto; /* Enable scrolling if content exceeds the height */
+    color: #1e3659;
+}
+
+.form-group {
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    /* Add padding to form-group */
+    width: 500px;
+    /* Adjust the width to your preference */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-control {
+    width: 250px;
+    /* Adjust the width to your preference */
+    padding: 10px;
+    margin-left: 10px;
+    /* Add space between label and input */
+}
+
+.form-group .form-label label {
+    flex: 1;
+    text-align: right;
+    margin-right: 10px;
+    /* Add space between label and input */
+}
+
+.form-group .form-label input {
+    flex: 2;
+    margin-left: 10px;
+}
+
+.form-group .btn-primary {
+
+    width: 100%;
+    /* Make the button as wide as the form-group */
+    background-color: #1e3659;
+    color: #EFEFEF;
+    font-weight: bold;
+    border: 1px solid lightblue;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}

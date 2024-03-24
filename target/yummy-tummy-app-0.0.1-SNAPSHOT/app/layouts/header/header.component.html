@@ -1,0 +1,86 @@
+<nav class="navbar navbar-expand navbar-dark custom-bg-color px-2"> <!-- navbar on header with darkmode-->
+
+    <div class="d-flex me-10">
+        <div class="side-nav-button p-2 me-3 text-light" (click)="sideNavToggle()">
+            <i class="fa-solid fa-bars"></i> <!-- drop bar -->
+        </div>
+    </div>
+
+
+    <div class="d-flex me-5 logo-design">
+        <!-- <img class="header-logo" src="assets/images/yummy_tummy_logo.PNG" alt="Yummy Tummy"> App logo and navbar -->
+        <!-- <i class="far fa-smile"></i> -->
+        <i class="fas fa-hamburger"></i>
+        YUMMY TUMMY
+        <!-- <i class="fas fa-utensils"></i> -->
+        <i class="far fa-smile smile-icon"></i>
+    </div>
+    <div class="smile-logo">
+        <div class="eye left-eye"></div>
+        <div class="eye right-eye"></div>
+        <div class="mouth"></div>
+    </div>
+    <div class="navbar-collapse">
+        <ul class="navbar-nav me-auto">
+
+            <div class="d-flex me-5">
+                <li class="nav-item dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">Menu1</button>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Child1</a></li>
+                        <li><a class="dropdown-item" href="#">Child2</a></li>
+                        <li><a class="dropdown-item" href="#">Child3</a></li>
+                        <li><a class="dropdown-item" href="#">Child4</a></li>
+                    </ul>
+                </li>
+            </div>
+
+            <div class="d-flex me-5">
+
+                <li class="nav-item dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">Menu2</button>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Child1</a></li>
+                        <li><a class="dropdown-item" href="#">Child2</a></li>
+                        <li><a class="dropdown-item" href="#">Child3</a></li>
+                        <li><a class="dropdown-item" href="#">Child4</a></li>
+                    </ul>
+                </li>
+            </div>
+
+            <div class="d-flex me-5">
+
+                <li class="nav-item dropdown">
+                    <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown">Menu3</button>
+                    <ul class="dropdown-menu custom-dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Child1</a></li>
+                        <li><a class="dropdown-item" href="#">Child2</a></li>
+                        <li><a class="dropdown-item" href="#">Child3</a></li>
+                        <li><a class="dropdown-item" href="#">Child4</a></li>
+                    </ul>
+                </li>
+            </div>
+
+        </ul>
+    </div>
+
+    <form class="d-flex me-5">
+        <input class="form-control me-2" placeholder="search" type="search">
+        <button class="btn btn-outline-light" type="submit">Search</button>
+    </form>
+
+    <div class="d-flex me-10">
+        <li class="nav-item dropdown">
+            <!-- <i class="fa-solid fa-user"></i> -->
+            <button class="btn btn-outline-light dropdown-toggle fa-solid fa-user" data-bs-toggle="dropdown"></button>
+            <ul class="dropdown-menu custom-dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#" routerLink="/user" routerLinkActive="active">Your Profile</a></li>
+                <li><a class="dropdown-item" href="#" [routerLink]="['/update-user', fetchedUserId]">Update Profile</a>
+                </li>
+                <li><a class="dropdown-item" href="#" [routerLink]="['/delete-user',fetchedUserId]">Delete Profile</a>
+                </li>
+                <li><a class="dropdown-item" href="#" (click)="logOut()">Log Out</a></li>
+            </ul>
+        </li>
+    </div>
+</nav>
