@@ -41,9 +41,11 @@ com\food\app\resource\OrderItemResource.class
 com\food\app\resource\UserResource.class
 com\food\app\enums\StringConstants.class
 com\food\app\domain\Location.class
+com\food\app\mapper\OrderItemMapper.class
 com\food\app\service\CardInfoService.class
 com\food\app\repository\LocationRepository.class
 com\food\app\resource\MenuResource.class
+com\food\app\mapper\mappingImpl\OrderItemMappingImpl.class
 com\food\app\domain\User.class
 com\food\app\service\ContactInfoService.class
 com\food\app\mapper\MenuMapper.class
